@@ -1,0 +1,29 @@
+/* 固定navbar */
+.navbar {
+    position: fixed; /* Set the navbar to fixed position */
+    top: 0; /* Position the navbar at the top of the page */
+    width: 100%; /* Full width */
+    z-index: 1050;
+}
+/* navbar高度 */
+.nav-padding {
+    padding-top: 56px;
+}
+/* 改變側邊欄顏色 */
+.sb-sidenav-light {
+    background-color: #e6e6e6;
+}
+/* 表格垂直置中 */
+td, th {
+    vertical-align: middle !important;
+    padding: 0.8rem !important;
+}
+/* 表格設定 */
+table {
+    
+}
+/* 改變側邊欄標題顏色
+.sb-sidenav-menu-heading {
+    color: #808080;
+}
+*/
