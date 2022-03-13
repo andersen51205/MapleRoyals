@@ -108,20 +108,70 @@
             <div id="layoutSidenav_content" class="nav-padding">
                 <main>
                     <div class="container-fluid px-4 pt-4">
-                        <h2 class="mt-0 mb-4">加血任務 - 組合總覽</h2>
+                        <h2 class="mt-0 mb-4">加血任務 - 神木村2</h2>
                             <div class="container">
-                                <div class="row">
-                                    <div class="col-3">
-                                        <div class="card" style="width: 18rem;">
-                                            <img src="./image/HpQuest/Leafre2.png" class="card-img-top" alt="...">
-                                            <div class="card-body">
-                                                <h5 class="card-title">神木村2</h5>
-                                                <p class="card-text"></p>
-                                                <a href="./HpQuest-Leafre2.html" class="btn btn-primary"><i class="fa-solid fa-magnifying-glass"></i> 查看</a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
+                                <table class="table table-bordered" style="width:90%">
+                                    <thead>
+                                        <tr>
+                                            <th>
+                                                <div class="ml-2">任務資訊</div>
+                                            </th>
+                                            <th>
+                                                <div class="ml-2">掉落怪物</div>
+                                            </th>
+                                            <th>
+                                                <div class="ml-2">建議地點</div>
+                                            </th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td class="text-center" rowspan="3">
+                                                <img src="./image/HpQuest/Leafre2.png" alt="">
+                                            </td>
+                                            <td>
+                                                <img src="./image/HpQuest/Birk.png" width="200px" alt="">
+                                            </td>
+                                            <td>
+                                                神木村：森林岔道
+                                                <button class="btn btn-outline-primary ml-3 py-1"
+                                                    data-src="./image/HpQuest/Map-ForestCrossroad.png"
+                                                    data-mapName="神木村：森林岔道"
+                                                    onclick="showMap(this)">
+                                                    <i class="fa-solid fa-location-dot"></i> 位置
+                                                </button>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <img src="./image/HpQuest/BlackKentaurus.png" width="200px" alt="">
+                                            </td>
+                                            <td>
+                                                神木村：暗黑半人馬領土
+                                                <button class="btn btn-outline-primary ml-3 py-1"
+                                                    data-src="./image/HpQuest/Map-AreaOfBlackKentaurus.png"
+                                                    data-mapName="神木村：暗黑半人馬領土"
+                                                    onclick="showMap(this)">
+                                                    <i class="fa-solid fa-location-dot"></i> 位置
+                                                </button>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <img src="./image/HpQuest/Brexton.png" width="200px" alt="">
+                                            </td>
+                                            <td>
+                                                神木村：龍森林 Ⅲ
+                                                <button class="btn btn-outline-primary ml-3 py-1"
+                                                    data-src="./image/HpQuest/Map-DragonForestIII.png"
+                                                    data-mapName="神木村：龍森林 Ⅲ"
+                                                    onclick="showMap(this)">
+                                                    <i class="fa-solid fa-location-dot"></i> 位置
+                                                </button>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
                             </div>
                         </div>
                     </div>
