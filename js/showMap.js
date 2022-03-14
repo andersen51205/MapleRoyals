@@ -4,8 +4,19 @@ function showMap(el) {
     Swal.fire({
         title: `<strong>${title}</strong>`,
         html:
-            `<img src="${src}" with="664" heigh="521" alt="">`,
+            `<img src="${src}" width="664" height="521" alt="">`,
         showConfirmButton: false,
         width: '730',
+    });
+}
+function showMiniMap(el) {
+    const src = el.getAttribute('data-src');
+    const title = el.getAttribute('data-mapName');
+    Swal.fire({
+        title: `<strong>${title}</strong>`,
+        html:
+            `<img src="${src}" height="400" alt="">`,
+        showConfirmButton: false,
+        width: '700',
     });
 }
