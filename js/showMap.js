@@ -20,3 +20,14 @@ function showMiniMap(el) {
         width: '700',
     });
 }
+function showQuest(el) {
+    const src = el.getAttribute('data-src');
+    const title = el.getAttribute('data-questName');
+    Swal.fire({
+        title: `<strong>${title}</strong>`,
+        html:
+            `<img src="${src}" height="400" alt="">`,
+        showConfirmButton: false,
+        width: '700',
+    });
+}
