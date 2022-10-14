@@ -33,8 +33,8 @@
                                         data-bs-toggle="tab" data-bs-target="#Div_quest_info" role="tab">
                                     任務資訊
                                 </button>
-                                <button type="button" id="Btn_quest_detail" class="nav-link"
-                                        data-bs-toggle="tab" data-bs-target="#Div_quest_detail" role="tab">
+                                <button type="button" id="Btn_quest_content" class="nav-link"
+                                        data-bs-toggle="tab" data-bs-target="#Div_quest_content" role="tab">
                                     任務內容
                                 </button>
                             </div>
@@ -67,7 +67,7 @@
                                             <td colspan="6">
                                                 隨機一種組合
                                                 <button class="btn btn-outline-primary ms-3 py-1"
-                                                        onclick="showQuestDetail()">
+                                                        onclick="showQuestContent()">
                                                     <i class="fa-solid fa-magnifying-glass"></i> 查看
                                                 </button>
                                             </td>
@@ -101,14 +101,15 @@
                                 </table>
                             </div>
                             <!-- 任務內容 -->
-                            <div id="Div_quest_detail" class="tab-pane fade" role="tabpanel" tabindex="0">
-                                <div class="row mt-3">
+                            <div id="Div_quest_content" class="tab-pane fade" role="tabpanel" tabindex="0">
+                                <div id="Div_quset_overview" class="collapse show row mt-3">
                                     <div class="col-6 col-md-4 col-xl-3 mb-4" v-for="item in questData">
                                         <div class="card">
                                             <img v-bind:src="item.image" class="card-img-top" alt="...">
                                             <div class="card-body">
                                                 <h5 class="card-title">{{ item.title }}</h5>
-                                                <a href="" class="btn btn-primary">
+                                                <a class="btn btn-primary" target="_blank"
+                                                        v-bind:href="item.url">
                                                     <i class="fa-solid fa-magnifying-glass"></i> 查看
                                                 </a>
                                             </div>
