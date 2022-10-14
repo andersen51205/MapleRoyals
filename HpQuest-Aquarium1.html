@@ -13,197 +13,103 @@
         <link rel="stylesheet" href="css/utility/fontawesome.min.css"><!-- FontAwesome -->
         <link rel="stylesheet" href="css/utility/sweetalert2.min.css"><!-- SweetAlert -->
         <!-- customize CSS -->
-        <link href="css/styles.css" rel="stylesheet">
-        <link href="css/customize.css" rel="stylesheet">
+        <link href="css/app.css" rel="stylesheet">
     </head>
-    <body class="sb-nav-fixed">
+    <body>
         <!-- navbar -->
-        <nav class="navbar navbar-expand-md navbar-dark bg-secondary shadow-sm" style="z-index:1050;">
-            <div class="container">
-                <!-- Navbar Brand-->
-                <a class="navbar-brand" href="./index.html">
-                    <i class="fa-brands fa-canadian-maple-leaf"></i> MapleRoyals
-                </a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="{{ __('Toggle navigation') }}">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <!-- PageLink -->
-                <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                    <!-- Left Side Of Navbar -->
-                    <ul class="navbar-nav me-auto">
-                        <li class="nav-item dropdown">
-                            <a id="navbarDropdown" class="nav-link dropdown-toggle active" href="#" role="button"
-                                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" v-pre>
-                                <i class="fa-solid fa-circle-question"></i> 任務資訊
-                            </a>
-                            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                <a class="dropdown-item" href="./SafeAdventure.html">
-                                    <i class="fa-solid fa-medal"></i> 安全冒險
-                                </a>
-                                <a class="dropdown-item" href="./HpQuest.html">
-                                    <i class="fa-solid fa-briefcase-medical"></i> 加血任務
-                                </a>
-                            </div>
-                        </li>
-                    </ul>
+        <div id="Div_navbar">
+            <nav-component></nav-component>
+        </div>
+        <!-- main -->
+        <main id="Main_content" class="nav-padding">
+            <div class="container px-4 pt-4">
+                <h2 class="mt-0 mb-4">加血任務 - 水世界</h2>
+                    <div class="container">
+                        <table class="table table-bordered">
+                            <thead>
+                                <tr>
+                                    <th>
+                                        <div class="ml-2">任務資訊</div>
+                                    </th>
+                                    <th>
+                                        <div class="ml-2">掉落怪物</div>
+                                    </th>
+                                    <th>
+                                        <div class="ml-2">建議地點</div>
+                                    </th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td class="text-center" rowspan="3">
+                                        <img src="./image/HpQuest/Aquarium1.png" alt="">
+                                    </td>
+                                    <td>
+                                        <img src="./image/HpQuest/Squids.png" width="300px" alt="">
+                                    </td>
+                                    <td>
+                                        <div class="d-inline-block align-middle text-center">
+                                            水世界：危險海峽Ⅱ
+                                        </div>
+                                        <div class="d-inline-block align-middle ml-3">
+                                            <button class="btn btn-outline-primary py-1"
+                                                data-src="./image/HpQuest/Map-DangerousSeaGorgeII.png"
+                                                data-mapName="水世界：危險海峽Ⅱ"
+                                                onclick="showMap(this)">
+                                                <i class="fa-solid fa-location-dot"></i> 位置
+                                            </button>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <img src="./image/HpQuest/Thanatos.png" width="200px" alt="">
+                                    </td>
+                                    <td>
+                                        <div class="d-inline-block align-middle text-center">
+                                            玩具城鐘塔：遺忘的迴廊
+                                        </div>
+                                        <div class="d-inline-block align-middle ml-3">
+                                            <button class="btn btn-outline-primary py-1"
+                                                data-src="./image/HpQuest/Map-ForgottenPassage.png"
+                                                data-mapName="玩具城鐘塔：遺忘的迴廊"
+                                                onclick="showMap(this)">
+                                                <i class="fa-solid fa-location-dot"></i> 位置
+                                            </button>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <img src="./image/HpQuest/Flyeye.png" width="200px" alt="">
+                                    </td>
+                                    <td>
+                                        <div class="d-inline-block align-middle text-center">
+                                            水世界：危險的洞穴
+                                        </div>
+                                        <div class="d-inline-block align-middle ml-3">
+                                            <button class="btn btn-outline-primary py-1"
+                                                data-src="./image/HpQuest/Map-TheDangerousCave.png"
+                                                data-mapName="水世界：危險的洞穴"
+                                                onclick="showMap(this)">
+                                                <i class="fa-solid fa-location-dot"></i> 位置
+                                            </button>
+                                        </div>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
                 </div>
             </div>
-        </nav>
-        
-        <div id="layoutSidenav">
-            <!-- Sidenav -->
-            <div id="layoutSidenav_nav">
-                <nav class="sb-sidenav accordion sb-sidenav-light" id="sidenavAccordion">
-                    <div class="sb-sidenav-menu">
-                        <div class="nav">
-                            <!-- title -->
-                            <div class="sb-sidenav-menu-heading">加血任務</div>
-                            <!-- Link -->
-                            <a class="nav-link" href="./HpQuest.html">
-                                <div class="sb-nav-link-icon"><i class="fa-solid fa-circle-info"></i></div>
-                                任務資訊
-                            </a>
-                            <a class="nav-link" href="./HpQuest-Combination.html">
-                                <div class="sb-nav-link-icon"><i class="fa-solid fa-list"></i></div>
-                                組合總覽
-                            </a>
-                            <div class="sb-sidenav-menu-heading">任務組合</div>
-                            <a class="nav-link" href="./HpQuest-Misc1.html">
-                                <div class="sb-nav-link-icon"><i class="fa-solid fa-circle-question"></i></div>
-                                綜合1
-                            </a>
-                            <a class="nav-link" href="./HpQuest-Misc2.html">
-                                <div class="sb-nav-link-icon"><i class="fa-solid fa-circle-question"></i></div>
-                                綜合2
-                            </a>
-                            <a class="nav-link" href="./HpQuest-Aquarium1.html">
-                                <div class="sb-nav-link-icon"><i class="fa-solid fa-circle-question"></i></div>
-                                水世界
-                            </a>
-                            <a class="nav-link" href="./HpQuest-Ludibrium1.html">
-                                <div class="sb-nav-link-icon"><i class="fa-solid fa-circle-question"></i></div>
-                                玩具城
-                            </a>
-                            <a class="nav-link" href="./HpQuest-Leafre1.html">
-                                <div class="sb-nav-link-icon"><i class="fa-solid fa-circle-question"></i></div>
-                                神木村1
-                            </a>
-                            <a class="nav-link" href="./HpQuest-Leafre2.html">
-                                <div class="sb-nav-link-icon"><i class="fa-solid fa-circle-question"></i></div>
-                                神木村2
-                            </a>
-                            <a class="nav-link" href="./HpQuest-Leafre3.html">
-                                <div class="sb-nav-link-icon"><i class="fa-solid fa-circle-question"></i></div>
-                                神木村3
-                            </a>
-                            <a class="nav-link" href="./HpQuest-NLC1.html">
-                                <div class="sb-nav-link-icon"><i class="fa-solid fa-circle-question"></i></div>
-                                新葉城
-                            </a>
-                            <a class="nav-link" href="./HpQuest-CBD1.html">
-                                <div class="sb-nav-link-icon"><i class="fa-solid fa-circle-question"></i></div>
-                                新加玻
-                            </a>
-                            <a class="nav-link" href="./HpQuest-WorldTravel1.html">
-                                <div class="sb-nav-link-icon"><i class="fa-solid fa-circle-question"></i></div>
-                                世界旅遊
-                            </a>
-                        </div>
-                    </div>
-                </nav>
-            </div>
-            <!-- Content -->
-            <div id="layoutSidenav_content" class="nav-padding">
-                <main>
-                    <div class="container-fluid px-4 pt-4">
-                        <h2 class="mt-0 mb-4">加血任務 - 水世界</h2>
-                            <div class="container">
-                                <table class="table table-bordered" style="width:90%">
-                                    <thead>
-                                        <tr>
-                                            <th>
-                                                <div class="ml-2">任務資訊</div>
-                                            </th>
-                                            <th>
-                                                <div class="ml-2">掉落怪物</div>
-                                            </th>
-                                            <th>
-                                                <div class="ml-2">建議地點</div>
-                                            </th>
-                                        </tr>
-                                    </thead>
-                                    <tbody>
-                                        <tr>
-                                            <td class="text-center" rowspan="3">
-                                                <img src="./image/HpQuest/Aquarium1.png" alt="">
-                                            </td>
-                                            <td>
-                                                <img src="./image/HpQuest/Squids.png" width="300px" alt="">
-                                            </td>
-                                            <td>
-                                                <div class="d-inline-block align-middle text-center">
-                                                    水世界：危險海峽Ⅱ
-                                                </div>
-                                                <div class="d-inline-block align-middle ml-3">
-                                                    <button class="btn btn-outline-primary py-1"
-                                                        data-src="./image/HpQuest/Map-DangerousSeaGorgeII.png"
-                                                        data-mapName="水世界：危險海峽Ⅱ"
-                                                        onclick="showMap(this)">
-                                                        <i class="fa-solid fa-location-dot"></i> 位置
-                                                    </button>
-                                                </div>
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td>
-                                                <img src="./image/HpQuest/Thanatos.png" width="200px" alt="">
-                                            </td>
-                                            <td>
-                                                <div class="d-inline-block align-middle text-center">
-                                                    玩具城鐘塔：遺忘的迴廊
-                                                </div>
-                                                <div class="d-inline-block align-middle ml-3">
-                                                    <button class="btn btn-outline-primary py-1"
-                                                        data-src="./image/HpQuest/Map-ForgottenPassage.png"
-                                                        data-mapName="玩具城鐘塔：遺忘的迴廊"
-                                                        onclick="showMap(this)">
-                                                        <i class="fa-solid fa-location-dot"></i> 位置
-                                                    </button>
-                                                </div>
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td>
-                                                <img src="./image/HpQuest/Flyeye.png" width="200px" alt="">
-                                            </td>
-                                            <td>
-                                                <div class="d-inline-block align-middle text-center">
-                                                    水世界：危險的洞穴
-                                                </div>
-                                                <div class="d-inline-block align-middle ml-3">
-                                                    <button class="btn btn-outline-primary py-1"
-                                                        data-src="./image/HpQuest/Map-TheDangerousCave.png"
-                                                        data-mapName="水世界：危險的洞穴"
-                                                        onclick="showMap(this)">
-                                                        <i class="fa-solid fa-location-dot"></i> 位置
-                                                    </button>
-                                                </div>
-                                            </td>
-                                        </tr>
-                                    </tbody>
-                                </table>
-                            </div>
-                        </div>
-                    </div>
-                </main>
-            </div>
-        </div>
-        
+        </main>        
         <!-- script -->
-        <script src="js/utility/jquery-3.6.0.min.js"></script><!-- JQuery -->
-        <script src="js/utility/bootstrap.min.js"></script><!-- Bootstrap -->
+        <script src="js/utility/vue.global.min.js"></script><!-- Vuejs -->
+        <script src="js/utility/bootstrap.bundle.min.js"></script><!-- Bootstrap -->
         <script src="js/utility/fontawesome.min.js"></script><!-- FontAwesome -->
         <script src="js/utility/sweetalert2.min.js"></script><!-- SweetAlert -->
+        <!-- vue component -->
+        <script src="js/component/navbar.js"></script>
         <!-- customize script -->
         <script src="js/showMap.js"></script>
     </body>
