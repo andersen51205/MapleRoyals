@@ -99,7 +99,7 @@ const QA5 = [{
     answer : "No. Real World Trading is unfair, detrimental to the<br>\
                 market, and is not allowed."
 }];
-// Vue實例
+// Vue實體
 const mainContent = Vue.createApp({
     data() {
         return {
