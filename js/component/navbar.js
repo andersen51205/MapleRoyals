@@ -26,7 +26,7 @@ header.component('nav-component', {
                             </a>
                             <div class="dropdown-menu">
                                 <a class="dropdown-item" href="./SafeAdventure.html">
-                                    <i class="fa-solid fa-medal"></i> 安全冒險
+                                    <i class="fa-solid fa-medal"></i> 乖寶寶冒險
                                 </a>
                                 <a class="dropdown-item" href="./HpQuest.html">
                                     <i class="fa-solid fa-briefcase-medical"></i> 加血任務
