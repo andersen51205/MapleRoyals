@@ -360,8 +360,6 @@ function showPage(page) {
     document.querySelector('#Div_requirement_list').classList.add('d-none');
     document.querySelector('#Div_requirement_detail').classList.add('d-none');
     if(page === "info") {
-        const element = document.querySelector('.my-element');
-        element.classList.add('animate__animated', 'animate__bounceOutLeft');
         document.querySelector('#Div_quest_info').classList.remove('d-none');
     }
     else if(page === "requirement") {
