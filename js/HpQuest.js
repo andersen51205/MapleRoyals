@@ -1,270 +1,260 @@
 // 頁面資料
 const requirements = [{
         title: "綜合1",
-        image: "./image/HpQuest/Misc1.png",
-        url: "./HpQuest-Misc1.html",
+        image: "./src/Quest/Misc1.png",
     },{
         title: "綜合2",
-        image: "./image/HpQuest/Misc2.png",
-        url: "./HpQuest-Misc2.html",
+        image: "./src/Quest/Misc2.png",
     },{
         title: "水世界",
-        image: "./image/HpQuest/Aquarium1.png",
-        url: "./HpQuest-Aquarium1.html",
+        image: "./src/Quest/Aquarium1.png",
     },{
         title: "玩具城",
-        image: "./image/HpQuest/Ludibrium1.png",
-        url: "./HpQuest-Ludibrium1.html",
+        image: "./src/Quest/Ludibrium1.png",
     },{
         title: "神木村1",
-        image: "./image/HpQuest/Leafre1.png",
-        url: "./HpQuest-Leafre1.html",
+        image: "./src/Quest/Leafre1.png",
     },{
         title: "神木村2",
-        image: "./image/HpQuest/Leafre2.png",
-        url: "./HpQuest-Leafre2.html",
+        image: "./src/Quest/Leafre2.png",
     },{
         title: "神木村3",
-        image: "./image/HpQuest/Leafre3.png",
-        url: "./HpQuest-Leafre3.html",
+        image: "./src/Quest/Leafre3.png",
     },{
         title: "新葉城",
-        image: "./image/HpQuest/NLC1.png",
-        url: "./HpQuest-NLC1.html",
+        image: "./src/Quest/NLC1.png",
     },{
         title: "新加坡",
-        image: "./image/HpQuest/CBD1.png",
-        url: "./HpQuest-CBD1.html",
+        image: "./src/Quest/CBD1.png",
     },{
         title: "世界旅行",
-        image: "./image/HpQuest/WorldTravel1.png",
-        url: "./HpQuest-WorldTravel1.html",
+        image: "./src/Quest/WorldTravel1.png",
 }];
 const details = [
     {
         title: "綜合1",
-        info: "./image/HpQuest/Misc1.png",
+        info: "./src/Quest/Misc1.png",
         rows: [{
-            mob: "./image/HpQuest/GreenMushroom.png",
+            mob: "./src/Mobs/GreenMushroom.png",
             location: '魔法森林：南部森林訓練場Ⅲ<br>(從"魔法森林南部"進入)',
             mapBtn: {
                 content : "進入位置",
-                img: "./image/HpQuest/Map-TheForestSouthOfEllinia.png",
+                img: "./src/Map/TheForestSouthOfEllinia.png",
                 title: "魔法森林：魔法森林南部",
             },
             miniMapBtn:{
-                img: "./image/HpQuest/Minimap-SouthernForestDungeonIII.png",
+                img: "./src/Minimap/SouthernForestDungeonIII.png",
                 title: "「魔法森林：南部森林訓練場Ⅲ」入口處",
             },
         },{
-            mob: "./image/HpQuest/BlueWyvern.png",
+            mob: "./src/Mobs/BlueWyvern.png",
             location: '神木村：藍翼龍巢穴<br>(從"峽谷東側路"進入)',
             mapBtn: {
                 content : "進入位置",
-                img: "./image/HpQuest/Map-CanyonEastRoad.png",
+                img: "./src/Map/CanyonEastRoad.png",
                 title: "神木村：峽谷東側路"
             },
             miniMapBtn: {
-                img: "./image/HpQuest/Minimap-BlueWyvernNest.png",
+                img: "./src/Minimap/BlueWyvernNest.png",
                 title: "「神木村：藍翼龍巢穴」入口處",
             },
         },{
-            mob: "./image/HpQuest/DarkCornian.png",
+            mob: "./src/Mobs/DarkCornian.png",
             location: '神木村：神秘森林',
             mapBtn: {
-                img: "./image/HpQuest/Map-TheForestThatDisappeared.png",
+                img: "./src/Map/TheForestThatDisappeared.png",
                 title: "神木村：神秘森林",
             },
         }]
     },{
         title: "綜合2",
-        info: "./image/HpQuest/Misc2.png",
+        info: "./src/Quest/Misc2.png",
         rows: [{
-            mob: "./image/HpQuest/MemoryMonk.png",
+            mob: "./src/Mobs/MemoryMonk.png",
             location: '時間神殿 : 回憶之路1',
             mapBtn: {
-                img: "./image/HpQuest/Map-MemoryLane1.png",
+                img: "./src/Map/MemoryLane1.png",
                 title: "時間神殿 : 回憶之路1",
             },
         },{
-            mob: "./image/HpQuest/Birks.png",
+            mob: "./src/Mobs/Birks.png",
             width: "300",
             location: '神木村：森林岔道',
             mapBtn: {
-                img: "./image/HpQuest/Map-ForestCrossroad.png",
+                img: "./src/Map/ForestCrossroad.png",
                 title: "神木村 : 森林岔道",
             },
         },{
-            mob: "./image/HpQuest/Homunculus.png",
+            mob: "./src/Mobs/Homunculus.png",
             location: '瑪迦提亞城 : 研究所202號房',
             mapBtn: {
-                img: "./image/HpQuest/Map-LabU202.png",
+                img: "./src/Map/Lab-Unit202.png",
                 title: "瑪迦提亞城 : 研究所202號房",
             }
         }]
     },{
         title: "水世界",
-        info: "./image/HpQuest/Aquarium1.png",
+        info: "./src/Quest/Aquarium1.png",
         rows: [{
-            mob: "./image/HpQuest/Squids.png",
+            mob: "./src/Mobs/Squids.png",
             width: "300",
             location: '水世界：危險海峽Ⅱ',
             mapBtn: {
-                img: "./image/HpQuest/Map-DangerousSeaGorgeII.png",
+                img: "./src/Map/DangerousSeaGorgeII.png",
                 title: "水世界：危險海峽Ⅱ",
             },
         },{
-            mob: "./image/HpQuest/Thanatos.png",
+            mob: "./src/Mobs/Thanatos.png",
             location: '玩具城鐘塔：遺忘的迴廊',
             mapBtn: {
-                img: "./image/HpQuest/Map-ForgottenPassage.png",
+                img: "./src/Map/ForgottenPassage.png",
                 title: "玩具城鐘塔：遺忘的迴廊",
             },
         },{
-            mob: "./image/HpQuest/Flyeye.png",
+            mob: "./src/Mobs/Flyeye.png",
             location: '水世界：危險的洞穴',
             mapBtn: {
-                img: "./image/HpQuest/Map-TheDangerousCave.png",
+                img: "./src/Map/TheDangerousCave.png",
                 title: "水世界：危險的洞穴",
             },
         }]
     },{
         title: "玩具城",
-        info: "./image/HpQuest/Ludibrium1.png",
+        info: "./src/Quest/Ludibrium1.png",
         rows: [{
-            mob: "./image/HpQuest/GiganticSpiritViking.png",
+            mob: "./src/Mobs/GiganticSpiritViking.png",
             location: '玩具城鐘塔：糾結的時間<br>(從"扭曲的時間之路4"進入)',
             mapBtn: {
                 content: "進入位置",
-                img: "./image/HpQuest/Map-WarpedPathOfTime4.png",
+                img: "./src/Map/WarpedPathOfTime4.png",
                 title: "玩具城鐘塔：扭曲的時間之路4",
             },
             miniMapBtn: {
-                img: "./image/HpQuest/Minimap-TwistedTime.png",
+                img: "./src/Minimap/TwistedTime.png",
                 title: "「玩具城鐘塔：糾結的時間」入口處",
             },
         },{
-            mob: "./image/HpQuest/GrimPhantomWatch.png",
+            mob: "./src/Mobs/GrimPhantomWatch.png",
             location: '玩具城鐘塔：禁忌的時間<br>(從"遺忘的時間之路4"進入)',
             mapBtn: {
                 content: "進入位置",
-                img: "./image/HpQuest/Map-ForgottenPathOfTime4.png",
+                img: "./src/Map/ForgottenPathOfTime4.png",
                 title: "玩具城鐘塔：遺忘的時間之路4",
             },
             miniMapBtn: {
-                img: "./image/HpQuest/Minimap-ForbiddenTime.png",
+                img: "./src/Minimap/ForbiddenTime.png",
                 title: "「玩具城鐘塔：禁忌的時間」入口處",
             },
         },{
-            mob: "./image/HpQuest/Gatekeeper.png",
+            mob: "./src/Mobs/Gatekeeper.png",
             location: '玩具城鐘塔：扭曲的迴廊',
             mapBtn: {
-                img: "./image/HpQuest/Map-WarpedPassage.png",
+                img: "./src/Map/WarpedPassage.png",
                 title: "玩具城鐘塔：扭曲的迴廊",
             },
         }]
     },{
         title: "神木村1",
-        info: "./image/HpQuest/Leafre1.png",
+        info: "./src/Quest/Leafre1.png",
         rows: [{
-            mob: "./image/HpQuest/JrNewtie.png",
+            mob: "./src/Mobs/JrNewtie.png",
             location: '神木村：遭破壞的龍之巢穴',
             mapBtn: {
-                img: "./image/HpQuest/Map-DestroyedDragonNest.png",
+                img: "./src/Map/DestroyedDragonNest.png",
                 title: "神木村：遭破壞的龍之巢穴",
             },
         },{
-            mob: "./image/HpQuest/Skelegon.png",
+            mob: "./src/Mobs/Skelegon.png",
             location: '神木村：死龍巢穴',
             mapBtn: {
-                img: "./image/HpQuest/Map-NestOfDeadDragon.png",
+                img: "./src/Map/NestOfDeadDragon.png",
                 title: "神木村：死龍巢穴",
             },
         },{
-            mob: "./image/HpQuest/Skelosaurus.png",
+            mob: "./src/Mobs/Skelosaurus.png",
             location: '神木村：死龍巢穴',
             mapBtn: {
-                img: "./image/HpQuest/Map-NestOfDeadDragon.png",
+                img: "./src/Map/NestOfDeadDragon.png",
                 title: "神木村：死龍巢穴",
             },
         }]
     },{
         title: "神木村2",
-        info: "./image/HpQuest/Leafre2.png",
+        info: "./src/Quest/Leafre2.png",
         rows: [{
-            mob: "./image/HpQuest/Birk.png",
+            mob: "./src/Mobs/Birk.png",
             location: '神木村：森林岔道',
             mapBtn: {
-                img: "./image/HpQuest/Map-ForestCrossroad.png",
+                img: "./src/Map/ForestCrossroad.png",
                 title: "神木村：森林岔道",
             },
         },{
-            mob: "./image/HpQuest/BlackKentaurus.png",
+            mob: "./src/Mobs/BlackKentaurus.png",
             location: '神木村：暗黑半人馬領土',
             mapBtn: {
-                img: "./image/HpQuest/Map-AreaOfBlackKentaurus.png",
+                img: "./src/Map/AreaOfBlackKentaurus.png",
                 title: "神木村：暗黑半人馬領土",
             },
         },{
-            mob: "./image/HpQuest/Brexton.png",
+            mob: "./src/Mobs/Brexton.png",
             location: '神木村：龍森林 Ⅲ',
             mapBtn: {
-                img: "./image/HpQuest/Map-DragonForestIII.png",
+                img: "./src/Map/DragonForestIII.png",
                 title: "神木村：龍森林 Ⅲ",
             },
         }]
     },{
         title: "神木村3",
-        info: "./image/HpQuest/Leafre3.png",
+        info: "./src/Quest/Leafre3.png",
         rows: [{
-            mob: "./image/HpQuest/DrangonTurtles.png",
+            mob: "./src/Mobs/DrangonTurtles.png",
             width: "300",
             location: '神木村：龍森林路口',
             mapBtn: {
-                img: "./image/HpQuest/Map-EntranceToDragonForest.png",
+                img: "./src/Map/EntranceToDragonForest.png",
                 title: "神木村：龍森林路口",
             },
         },{
-            mob: "./image/HpQuest/Hobi.png",
+            mob: "./src/Mobs/Hobi.png",
             location: '神木村：怪脾氣森林',
             mapBtn: {
-                img: "./image/HpQuest/Map-CrankyForest.png",
+                img: "./src/Map/CrankyForest.png",
                 title: "神木村：怪脾氣森林",
             },
         },{
-            mob: "./image/HpQuest/Rash.png",
+            mob: "./src/Mobs/Rash.png",
             location: '神木村：西邊森林',
             mapBtn: {
-                img: "./image/HpQuest/Map-WestLeafreForest.png",
+                img: "./src/Map/WestLeafreForest.png",
                 title: "神木村：西邊森林",
             },
         }]
     },{
         title: "新葉城",
-        info: "./image/HpQuest/NLC1.png",
+        info: "./src/Quest/NLC1.png",
         rows: [{
-            mob: "./image/HpQuest/GluttonGhoul.png",
+            mob: "./src/Mobs/GluttonGhoul.png",
             location: '幻影森林：鬧鬼宅邸大廳<br>(從"新葉城"最左處搭車可抵達"鬧鬼宅邸")',
             miniMapBtn: {
-                img: "./image/HpQuest/Minimap-HauntedHouseFoyer.png",
+                img: "./src/Minimap/HauntedHouseFoyer.png",
                 title: "「幻影森林：鬧鬼宅邸大廳」入口處",
             },
         },{
-            mob: "./image/HpQuest/WolfSpider.png",
+            mob: "./src/Mobs/WolfSpider.png",
             location: '新葉城：機械蜘蛛洞穴<br>(從"大笨鐘"進入數張圖後抵達)',
             mapBtn: {
-                img: "./image/HpQuest/Map-WolfSpiderCavern.png",
+                img: "./src/Map/WolfSpiderCavern.png",
                 title: "新葉城：機械蜘蛛洞穴",
             },
             miniMapBtn: {
-                img: "./image/HpQuest/Minimap-BiggerBenLobby.png",
+                img: "./src/Minimap/BiggerBenLobby.png",
                 title: "「新葉城：大笨鐘」入口處",
             },
         },{
-            mob: "./image/HpQuest/BabyTyphon.png",
+            mob: "./src/Mobs/BabyTyphon.png",
             location: '紅杉木堡壘：危險之路<br>(從"較低的攀升"進入)',
             miniMapBtn: {
-                img: "./image/HpQuest/Minimap-ThePathOfPeril.png",
+                img: "./src/Minimap/ThePathOfPeril.png",
                 title: "紅杉木堡壘：較低的攀升",
             },
             howToGoBtn: {
@@ -272,67 +262,67 @@ const details = [
                 title: "",
             },
             spawnPointBtn: {
-                img: "./image/HpQuest/Minimap-BabyTyphon.png",
+                img: "./src/Minimap/BabyTyphon.png",
                 title: "怪物重生點：黃點處"
             },
         }]
     },{
         title: "新加坡",
-        info: "./image/HpQuest/CBD1.png",
+        info: "./src/Quest/CBD1.png",
         rows: [{
-            mob: "./image/HpQuest/Duku.png",
+            mob: "./src/Mobs/Duku.png",
             location: '新加坡：毀滅公園1',
             mapBtn: {
-                img: "./image/HpQuest/Map-DestroyedParkI.png",
+                img: "./src/Map/DestroyedParkI.png",
                 title: "新加坡：毀滅公園1",
             },
         },{
-            mob: "./image/HpQuest/Petrifighter.png",
+            mob: "./src/Mobs/Petrifighter.png",
             location: '新加坡：烏魯城中心',
             mapBtn: {
-                img: "./image/HpQuest/Map-UluCityCenter.png",
+                img: "./src/Map/UluCityCenter.png",
                 title: "新加坡：烏魯城中心",
             },
         },{
-            mob: "./image/HpQuest/Slygie.png",
+            mob: "./src/Mobs/Slygie.png",
             location: '新加坡：烏魯莊園Ⅱ',
             mapBtn: {
-                img: "./image/HpQuest/Map-UluEstateII.png",
+                img: "./src/Map/UluEstateII.png",
                 title: "新加坡：烏魯莊園Ⅱ",
             },
         }]
     },{
         title: "世界旅行",
-        info: "./image/HpQuest/WorldTravel1.png",
+        info: "./src/Quest/WorldTravel1.png",
         rows: [{
-            mob: "./image/HpQuest/GiantGoldMonk.png",
+            mob: "./src/Mobs/GiantGoldMonk.png",
             location: '少林寺：藏經閣7樓<br>(需解完"進入少林寺"任務，<br>才可進入大雄寶殿)',
             mapBtn: {
-                img: "./image/HpQuest/Map-ShaolinTempleFloor7.png",
+                img: "./src/Map/ShaolinTempleFloor7.png",
                 title: "少林寺：藏經閣7樓",
             },
             shortCutBtn: {},
             prequestBtn: {
-                img: "./image/HpQuest/EnteringShaolinTemple.png",
+                img: "./src/Quest/EnteringShaolinTemple.png",
                 title: "前置任務：進入少林寺"
             }
         },{
-            mob: "./image/HpQuest/DreamyGhost.png",
+            mob: "./src/Mobs/DreamyGhost.png",
             location: '日本神社：與大佛的邂逅',
             mapBtn: {
-                img: "./image/HpQuest/Map-EncounterWithBuddha.png",
+                img: "./src/Map/EncounterWithBuddha.png",
                 title: "日本神社：與大佛的邂逅",
             },
         },{
-            mob: "./image/HpQuest/TempleBlockMonster.png",
+            mob: "./src/Mobs/TempleBlockMonster.png",
             location: '少林寺：少林寺廣場',
             mapBtn: {
-                img: "./image/HpQuest/Map-TemplePlaza.png",
+                img: "./src/Map/TemplePlaza.png",
                 title: "少林寺：少林寺廣場",
             },
             shortCutBtn: {},
             spawnPointBtn: {
-                img: "./image/HpQuest/Minimap-TempleBlockMonster.png",
+                img: "./src/Minimap/TempleBlockMonster.png",
                 title: "怪物重生點：藍點處"
             }
         }]
