@@ -340,10 +340,11 @@ const requirementListVm = Vue.createApp({
 const detailVm = Vue.createApp({
     data() {
         return {
-            detail: [],
+            detail: {},
         }
     }
 }).mount('#Div_requirement_detail');
+
 // 切換頁面
 function showPage(page) {
     document.querySelector('#Div_quest_info').classList.add('d-none');
