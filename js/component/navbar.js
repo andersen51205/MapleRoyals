@@ -31,6 +31,9 @@ header.component('nav-component', {
                                 <a class="dropdown-item" href="./HpQuest.html">
                                     <i class="fa-solid fa-briefcase-medical"></i> 加血任務
                                 </a>
+                                <a class="dropdown-item" href="./TheBookOfAncient.html">
+                                    <i class="fa-solid fa-book"></i> 上古魔書
+                                </a>
                             </div>
                         </li>
                     </ul>
