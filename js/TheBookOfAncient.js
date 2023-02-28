@@ -425,10 +425,14 @@ const questFlowVm = Vue.createApp({
 function showPage(page) {
     document.querySelector('#Div_quest_info').classList.add('d-none');
     document.querySelector('#Div_quest_flow').classList.add('d-none');
+    document.querySelector('#Div_alcaster_and_dark_crystal_info').classList.add('d-none');
     if(page === "info") {
         document.querySelector('#Div_quest_info').classList.remove('d-none');
     }
     else if(page === "flow") {
         document.querySelector('#Div_quest_flow').classList.remove('d-none');
+    }
+    else if(page === "alcasterAndDarkCrystal") {
+        document.querySelector('#Div_alcaster_and_dark_crystal_info').classList.remove('d-none');
     }
 }
