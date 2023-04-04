@@ -47,7 +47,7 @@ const details = [
             },
             miniMapBtn:{
                 img: "./src/Minimap/SouthernForestDungeonIII.png",
-                title: "「魔法森林：南部森林訓練場Ⅲ」入口處",
+                title: "「魔法森林：南部森林訓練場Ⅲ」的入口處",
             },
         },{
             mob: "./src/Mobs/BlueWyvern.png",
@@ -59,7 +59,7 @@ const details = [
             },
             miniMapBtn: {
                 img: "./src/Minimap/BlueWyvernNest.png",
-                title: "「神木村：藍翼龍巢穴」入口處",
+                title: "「神木村：藍翼龍巢穴」的入口處",
             },
         },{
             mob: "./src/Mobs/DarkCornian.png",
@@ -134,7 +134,7 @@ const details = [
             },
             miniMapBtn: {
                 img: "./src/Minimap/TwistedTime.png",
-                title: "「玩具城鐘塔：糾結的時間」入口處",
+                title: "「玩具城鐘塔：糾結的時間」的入口處",
             },
         },{
             mob: "./src/Mobs/GrimPhantomWatch.png",
@@ -146,7 +146,7 @@ const details = [
             },
             miniMapBtn: {
                 img: "./src/Minimap/ForbiddenTime.png",
-                title: "「玩具城鐘塔：禁忌的時間」入口處",
+                title: "「玩具城鐘塔：禁忌的時間」的入口處",
             },
         },{
             mob: "./src/Mobs/Gatekeeper.png",
@@ -240,7 +240,7 @@ const details = [
             location: '幻影森林：鬧鬼宅邸大廳<br>(從"新葉城"最左處搭車可抵達"鬧鬼宅邸")',
             miniMapBtn: {
                 img: "./src/Minimap/HauntedHouseFoyer.png",
-                title: "「幻影森林：鬧鬼宅邸大廳」入口處",
+                title: "「幻影森林：鬧鬼宅邸大廳」的入口處",
             },
         },{
             mob: "./src/Mobs/WolfSpider.png",
@@ -251,14 +251,14 @@ const details = [
             },
             miniMapBtn: {
                 img: "./src/Minimap/BiggerBenLobby.png",
-                title: "「新葉城：大笨鐘」入口處",
+                title: "「新葉城：大笨鐘」的入口處",
             },
         },{
             mob: "./src/Mobs/BabyTyphon.png",
             location: '紅杉木堡壘：危險之路<br>(從"較低的攀升"進入)',
             miniMapBtn: {
                 img: "./src/Minimap/ThePathOfPeril.png",
-                title: "紅杉木堡壘：較低的攀升",
+                title: "「紅杉木堡壘：危險之路」的入口處",
             },
             howToGoBtn: {
                 img: "",
@@ -277,7 +277,7 @@ const details = [
             location: '幻影森林：邪惡的盡頭<br>(從"幻影森林：被遺忘的小徑"進入)',
             miniMapBtn: {
                 img: "./src/Minimap/TheEvilDead.png",
-                title: "「幻影森林：被遺忘的小徑」入口處",
+                title: "「幻影森林：邪惡的盡頭」的入口處",
             },
             howToGoBtn: {
                 img: "",
@@ -288,7 +288,7 @@ const details = [
             location: '守護者城堡：憤怒夜晚<br>(從"守護者城堡：大師大廳"進入)',
             miniMapBtn: {
                 img: "./src/Minimap/TheWrathOfNight.png",
-                title: "「守護者城堡：大師大廳」入口處",
+                title: "「守護者城堡：憤怒夜晚」的入口處",
             },
             howToGoBtn: {
                 img: "",
