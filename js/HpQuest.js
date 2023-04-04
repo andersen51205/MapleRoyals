@@ -21,8 +21,11 @@ const requirements = [{
         title: "神木村3",
         image: "./src/Quest/Leafre3.png",
     },{
-        title: "新葉城",
+        title: "新葉城1",
         image: "./src/Quest/NLC1.png",
+    },{
+        title: "新葉城2",
+        image: "./src/Quest/NLC2.png",
     },{
         title: "新加坡",
         image: "./src/Quest/CBD1.png",
@@ -230,7 +233,7 @@ const details = [
             },
         }]
     },{
-        title: "新葉城",
+        title: "新葉城1",
         info: "./src/Quest/NLC1.png",
         rows: [{
             mob: "./src/Mobs/GluttonGhoul.png",
@@ -264,6 +267,43 @@ const details = [
             spawnPointBtn: {
                 img: "./src/Minimap/BabyTyphon.png",
                 title: "怪物重生點：黃點處"
+            },
+        }]
+    },{
+        title: "新葉城2",
+        info: "./src/Quest/NLC2.png",
+        rows: [{
+            mob: "./src/Mobs/ElderWraith.png",
+            location: '幻影森林：邪惡的盡頭<br>(從"幻影森林：被遺忘的小徑"進入)',
+            miniMapBtn: {
+                img: "./src/Minimap/TheEvilDead.png",
+                title: "「幻影森林：被遺忘的小徑」入口處",
+            },
+            howToGoBtn: {
+                img: "",
+                title: "",
+            },
+        },{
+            mob: "./src/Mobs/NightShadow.png",
+            location: '守護者城堡：憤怒夜晚<br>(從"守護者城堡：大師大廳"進入)',
+            miniMapBtn: {
+                img: "./src/Minimap/TheWrathOfNight.png",
+                title: "「守護者城堡：大師大廳」入口處",
+            },
+            howToGoBtn: {
+                img: "",
+                title: "",
+            },
+        },{
+            mob: "./src/Mobs/CrimsonGuardian.png",
+            location: '紅杉木堡壘：守護者城堡',
+            mapBtn: {
+                img: "./src/Map/CrmisonwoodKeep.png",
+                title: "紅杉木堡壘：守護者城堡",
+            },
+            howToGoBtn: {
+                img: "",
+                title: "",
             },
         }]
     },{
