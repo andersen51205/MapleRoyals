@@ -7,6 +7,9 @@ const requirements = [
         title: "綜合2",
         image: "./src/Quest/Misc2.png",
     },{
+        title: "維多利亞島",
+        image: "./src/Quest/Victoria1.png",
+    },{
         title: "水世界",
         image: "./src/Quest/Aquarium1.png",
     },{
@@ -99,6 +102,36 @@ const details = [
                 img: "./src/Map/Lab-Unit202.png",
                 title: "瑪迦提亞城 : 研究所202號房",
             }
+        }]
+    },{
+        title: "維多利亞島",
+        info: "./src/Quest/Victoria1.png",
+        rows: [{
+            mob: "./src/Mobs/WildKargo.png",
+            location: '迷霧森林 : 魔龍領土 (換頻打怪)',
+            mapBtn: {
+                img: "./src/Map/WildCargoArea.png",
+                title: "迷霧森林 : 魔龍領土",
+            },
+        },{
+            mob: "./src/Mobs/CommanderSkeleton.png",
+            location: '遺跡發掘地 : 遺跡之峭壁',
+            mapBtn: {
+                img: "./src/Map/RemainsCliff.png",
+                title: "遺跡發掘地 : 遺跡之峭壁",
+            },
+        },{
+            mob: "./src/Mobs/OfficerSkeleton.png",
+            location: '遺跡發掘地 : 第三軍營',
+            mapBtn: {
+                content : "進入位置",
+                img: "./src/Map/RemainsTombIV.png",
+                title: "遺跡發掘地：遺跡之墓IV",
+            },
+            miniMapBtn:{
+                img: "./src/Minimap/Camp3.png",
+                title: "「遺跡發掘地 : 第三軍營」的入口處",
+            },
         }]
     },{
         title: "水世界",
