@@ -1,5 +1,6 @@
 // 頁面資料
-const requirements = [{
+const requirements = [
+    {
         title: "綜合1",
         image: "./src/Quest/Misc1.png",
     },{
@@ -264,7 +265,7 @@ const details = [
                 img: "./src/Minimap/ThePathOfPeril.png",
                 title: "「紅杉木堡壘：危險之路」的入口處",
             },
-            howToGoBtn: {
+            howToGoBtnDisabled: {
                 img: "",
                 title: "",
             },
@@ -283,7 +284,7 @@ const details = [
                 img: "./src/Minimap/TheEvilDead.png",
                 title: "「幻影森林：邪惡的盡頭」的入口處",
             },
-            howToGoBtn: {
+            howToGoBtnDisabled: {
                 img: "",
                 title: "",
             },
@@ -294,7 +295,7 @@ const details = [
                 img: "./src/Minimap/TheWrathOfNight.png",
                 title: "「守護者城堡：憤怒夜晚」的入口處",
             },
-            howToGoBtn: {
+            howToGoBtnDisabled: {
                 img: "",
                 title: "",
             },
@@ -305,7 +306,7 @@ const details = [
                 img: "./src/Map/CrmisonwoodKeep.png",
                 title: "紅杉木堡壘：守護者城堡",
             },
-            howToGoBtn: {
+            howToGoBtnDisabled: {
                 img: "",
                 title: "",
             },
@@ -377,6 +378,7 @@ const details = [
             mob: "./src/Mobs/Jonin.png",
             location: '楓葉古城：城堡走廊7 (黃色牆面第一張圖)',
             howToGoBtn: {
+                target: '#Modal_jonin',
             },
         },{
             mob: "./src/Mobs/BlackBear.png",

@@ -171,8 +171,14 @@
                                                 </button>
                                                 <!-- 如何前往 -->
                                                 <button class="btn btn-outline-primary ms-2 py-1"
-                                                        v-if="row.howToGoBtn"
+                                                        v-if="row.howToGoBtnDisabled"
                                                         disabled>
+                                                    <i class="fa-solid fa-route"></i> 如何前往
+                                                </button>
+                                                <button class="btn btn-outline-primary ms-2 py-1"
+                                                        data-bs-toggle="modal"
+                                                        v-if="row.howToGoBtn"
+                                                        v-bind:data-bs-target="row.howToGoBtn.target">
                                                     <i class="fa-solid fa-route"></i> 如何前往
                                                 </button>
                                                 <!-- 捷徑 -->
