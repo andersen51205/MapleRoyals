@@ -30,9 +30,13 @@ const requirements = [{
         title: "新加坡",
         image: "./src/Quest/CBD1.png",
     },{
-        title: "世界旅行",
+        title: "世界旅行1",
         image: "./src/Quest/WorldTravel1.png",
-}];
+    },{
+        title: "世界旅行2",
+        image: "./src/Quest/WorldTravel2.png",
+    }
+];
 const details = [
     {
         title: "綜合1",
@@ -332,7 +336,7 @@ const details = [
             },
         }]
     },{
-        title: "世界旅行",
+        title: "世界旅行1",
         info: "./src/Quest/WorldTravel1.png",
         rows: [{
             mob: "./src/Mobs/GiantGoldMonk.png",
@@ -364,6 +368,29 @@ const details = [
             spawnPointBtn: {
                 img: "./src/Minimap/TempleBlockMonster.png",
                 title: "怪物重生點：藍點處"
+            }
+        }]
+    },{
+        title: "世界旅行2",
+        info: "./src/Quest/WorldTravel2.png",
+        rows: [{
+            mob: "./src/Mobs/Jonin.png",
+            location: '楓葉古城：城堡走廊7 (黃色牆面第一張圖)',
+            howToGoBtn: {
+            },
+        },{
+            mob: "./src/Mobs/BlackBear.png",
+            location: '廬山鎮：山腳',
+            mapBtn: {
+                img: "./src/Map/FootOfTheMountain.png",
+                title: "廬山鎮：山腳",
+            },
+        },{
+            mob: "./src/Mobs/WhiteTiger.png",
+            location: '廬山鎮：山腳',
+            mapBtn: {
+                img: "./src/Map/FootOfTheMountain.png",
+                title: "廬山鎮：山腳",
             }
         }]
     }
