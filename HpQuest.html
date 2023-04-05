@@ -175,10 +175,16 @@
                                                         disabled>
                                                     <i class="fa-solid fa-route"></i> 如何前往
                                                 </button>
-                                                <button class="btn btn-outline-primary ms-2 py-1"
+                                                <!-- <button class="btn btn-outline-primary ms-2 py-1"
                                                         data-bs-toggle="modal"
                                                         v-if="row.howToGoBtn"
                                                         v-bind:data-bs-target="row.howToGoBtn.target">
+                                                    <i class="fa-solid fa-route"></i> 如何前往
+                                                </button> -->
+                                                <button class="btn btn-outline-primary ms-2 py-1"
+                                                        v-if="row.howToGoBtn"
+                                                        v-bind:data-index="row.howToGoBtn.index"
+                                                        onclick="showHowToGo(this)">
                                                     <i class="fa-solid fa-route"></i> 如何前往
                                                 </button>
                                                 <!-- 捷徑 -->
@@ -214,7 +220,7 @@
             </div>
         </main>
         <!-- Modal視窗 -->
-        <div id="Modal_jonin" class="modal fade" tabindex="-1">
+        <div id="Modal_how_to_go" class="modal fade" tabindex="-1">
             <div class="modal-dialog modal-lg modal-dialog-centered">
                 <div class="modal-content">
                     <div class="modal-header">
@@ -223,76 +229,10 @@
                     </div>
                     <div class="modal-body">
                         <div class="row justify-content-center">
-                            <div class="col-8 d-flex flex-column">
-                                <span class="fs-4 my-2">
-                                    1. 到日本神社找 <strong>Palanquin</strong> 前往楓葉古城
-                                </span>
+                            <div class="col-8 d-flex flex-column" v-for="(row, index) in content.rows">
+                                <span class="fs-4 my-2" v-html="row.text"></span>
                                 <div class="text-center">
-                                    <img class="img-min-width" src="./src/NPC/Palanquin.png" alt="Image Not Found">
-                                </div>
-                            </div>
-                            <div class="col-8 d-flex flex-column">
-                                <span class="fs-4 my-2">
-                                    2. 楓葉古城：城堡外
-                                </span>
-                                <div class="text-center">
-                                    <img class="img-min-width" src="./src/HowToGo/NinjaCastle/Map1.png" alt="Image Not Found">
-                                </div>
-                            </div>                                
-                            <div class="col-8 d-flex flex-column">
-                                <span class="fs-4 my-2">
-                                    3. 楓葉古城：城門內
-                                </span>
-                                <div class="text-center">
-                                    <img class="img-min-width" src="./src/HowToGo/NinjaCastle/Map2.png" alt="Image Not Found">
-                                </div>
-                            </div>
-                            <div class="col-8 d-flex flex-column">
-                                <span class="fs-4 my-2">
-                                    4. 楓葉古城：城堡走廊1
-                                </span>
-                                <div class="text-center">
-                                    <img class="img-min-width" src="./src/HowToGo/NinjaCastle/Map3.png" alt="Image Not Found">
-                                </div>
-                            </div>
-                            <div class="col-8 d-flex flex-column">
-                                <span class="fs-4 my-2">
-                                    5. 楓葉古城：城堡走廊2 (一幅畫)
-                                </span>
-                                <div class="text-center">
-                                    <img class="img-min-width" src="./src/HowToGo/NinjaCastle/Map4.png" alt="Image Not Found">
-                                </div>
-                            </div>
-                            <div class="col-8 d-flex flex-column">
-                                <span class="fs-4 my-2">
-                                    6. 楓葉古城：城堡走廊3 (兩幅畫之間有洞)
-                                </span>
-                                <div class="text-center">
-                                    <img class="img-min-width" src="./src/HowToGo/NinjaCastle/Map5.png" alt="Image Not Found">
-                                </div>
-                            </div>
-                            <div class="col-8 d-flex flex-column">
-                                <span class="fs-4 my-2">
-                                    7. 楓葉古城：城堡走廊4 (三幅畫)
-                                </span>
-                                <div class="text-center">
-                                    <img class="img-min-width" src="./src/HowToGo/NinjaCastle/Map6.png" alt="Image Not Found">
-                                </div>
-                            </div>
-                            <div class="col-8 d-flex flex-column">
-                                <span class="fs-4 my-2">
-                                    8. 楓葉古城：城堡走廊5 (中間地上有屏風)
-                                </span>
-                                <div class="text-center">
-                                    <img class="img-min-width" src="./src/HowToGo/NinjaCastle/Map7.png" alt="Image Not Found">
-                                </div>
-                            </div>
-                            <div class="col-8 d-flex flex-column">
-                                <span class="fs-4 my-2">
-                                    8. 楓葉古城：城堡走廊6 (右上角有樓梯)
-                                </span>
-                                <div class="text-center">
-                                    <img class="img-min-width" src="./src/HowToGo/NinjaCastle/Map8.png" alt="Image Not Found">
+                                    <img class="img-min-width" v-bind:src="row.img" alt="Image Not Found">
                                 </div>
                             </div>
                         </div>
