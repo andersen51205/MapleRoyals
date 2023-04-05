@@ -29,3 +29,7 @@ td, th {
 .cursor-pointer {
     cursor: pointer;
 }
+/* 最小尺寸350px */
+.img-min-width {
+    min-width: 350px;
+}
