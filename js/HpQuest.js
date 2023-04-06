@@ -10,11 +10,17 @@ const requirements = [
         title: "維多利亞島",
         image: "./src/Quest/Victoria1.png",
     },{
-        title: "水世界",
+        title: "水世界1",
         image: "./src/Quest/Aquarium1.png",
     },{
-        title: "玩具城",
+        title: "水世界2",
+        image: "./src/Quest/Aquarium2.png",
+    },{
+        title: "玩具城1",
         image: "./src/Quest/Ludibrium1.png",
+    },{
+        title: "玩具城2",
+        image: "./src/Quest/Ludibrium2.png",
     },{
         title: "神木村1",
         image: "./src/Quest/Leafre1.png",
@@ -137,7 +143,7 @@ const details = [
             },
         }]
     },{
-        title: "水世界",
+        title: "水世界1",
         info: "./src/Quest/Aquarium1.png",
         rows: [{
             mob: "./src/Mobs/Squids.png",
@@ -163,7 +169,32 @@ const details = [
             },
         }]
     },{
-        title: "玩具城",
+        title: "水世界2",
+        info: "./src/Quest/Aquarium2.png",
+        rows: [{
+            mob: "./src/Mobs/Lycanthrope.png",
+            location: '冰原雪域：狼的領土3 (換頻打怪)',
+            mapBtn: {
+                img: "./src/Map/WolfTerritoryIII.png",
+                title: "冰原雪域：狼的領土3",
+            },
+        },{
+            mob: "./src/Mobs/ColdShark.png",
+            location: '水世界：受難船的墓地',
+            mapBtn: {
+                img: "./src/Map/TheGraveOfWreckedShip.png",
+                title: "水世界：受難船的墓地",
+            },
+        },{
+            mob: "./src/Mobs/Goby.png",
+            location: '水世界：深海峽谷2',
+            mapBtn: {
+                img: "./src/Map/DeepSeaGorgeII.png",
+                title: "水世界：深海峽谷2",
+            },
+        }]
+    },{
+        title: "玩具城1",
         info: "./src/Quest/Ludibrium1.png",
         rows: [{
             mob: "./src/Mobs/GiganticSpiritViking.png",
@@ -195,6 +226,31 @@ const details = [
             mapBtn: {
                 img: "./src/Map/WarpedPassage.png",
                 title: "玩具城鐘塔：扭曲的迴廊",
+            },
+        }]
+    },{
+        title: "玩具城2",
+        info: "./src/Quest/Ludibrium2.png",
+        rows: [{
+            mob: "./src/Mobs/SpiritViking.png",
+            location: '玩具城鐘塔：扭曲的時間之路4',
+            mapBtn: {
+                img: "./src/Map/WarpedPathOfTime4.png",
+                title: "玩具城鐘塔：扭曲的時間之路4",
+            },
+        },{
+            mob: "./src/Mobs/BoneFish.png",
+            location: '水世界：深海峽谷1',
+            mapBtn: {
+                img: "./src/Map/DeepSeaGorgeI.png",
+                title: "水世界：深海峽谷1",
+            },
+        },{
+            mob: "./src/Mobs/PhantomWatch.png",
+            location: '玩具城鐘塔：遺忘的時間之路4',
+            mapBtn: {
+                img: "./src/Map/ForgottenPathOfTime4.png",
+                title: "玩具城鐘塔：遺忘的時間之路4",
             },
         }]
     },{
