@@ -25,6 +25,9 @@ const requirements = [
         title: "神木村3",
         image: "./src/Quest/Leafre3.png",
     },{
+        title: "神木村4",
+        image: "./src/Quest/Leafre4.png",
+    },{
         title: "新葉城1",
         image: "./src/Quest/NLC1.png",
     },{
@@ -271,6 +274,31 @@ const details = [
             },
         }]
     },{
+        title: "神木村4",
+        info: "./src/Quest/Leafre4.png",
+        rows: [{
+            mob: "./src/Mobs/RedKentaurus.png",
+            location: '神木村：火焰半人馬領土',
+            mapBtn: {
+                img: "./src/Map/TheAreaOfRedKentaurus.png",
+                title: "神木村：火焰半人馬領土",
+            },
+        },{
+            mob: "./src/Mobs/Beetle.png",
+            location: '神木村：東邊森林',
+            mapBtn: {
+                img: "./src/Map/EastForest.png",
+                title: "神木村：東邊森林",
+            },
+        },{
+            mob: "./src/Mobs/BloodHarp.png",
+            location: '神木村：天空之巢2',
+            mapBtn: {
+                img: "./src/Map/SkyNestII.png",
+                title: "神木村：天空之巢2",
+            },
+        }]
+    },{
         title: "新葉城1",
         info: "./src/Quest/NLC1.png",
         rows: [{
@@ -409,9 +437,9 @@ const details = [
         info: "./src/Quest/WorldTravel2.png",
         rows: [{
             mob: "./src/Mobs/Jonin.png",
-            location: '楓葉古城：城堡走廊7 (黃色牆面第一張圖)',
+            location: '楓葉古城：城堡走廊7 (黃色牆壁第一張圖)',
             howToGoBtn: {
-                target: '#Modal_jonin',
+                index: 0,
             },
         },{
             mob: "./src/Mobs/BlackBear.png",
@@ -430,7 +458,43 @@ const details = [
         }]
     }
 ];
+const howToGos = [
+    {
+        rows: [
+            {
+                text: "1. 到日本神社找 <strong>Palanquin</strong> 前往楓葉古城",
+                img: "./src/NPC/Palanquin.png",
+            },{
+                text: "2. 楓葉古城：城堡外",
+                img: "./src/HowToGo/NinjaCastle/Map1.png",
+            },{
+                text: "3. 楓葉古城：城門內",
+                img: "./src/HowToGo/NinjaCastle/Map2.png",
+            },{
+                text: "4. 楓葉古城：城堡走廊1",
+                img: "./src/HowToGo/NinjaCastle/Map3.png",
+            },{
+                text: "5. 楓葉古城：城堡走廊2 (一幅畫)",
+                img: "./src/HowToGo/NinjaCastle/Map4.png",
+            },{
+                text: "6. 楓葉古城：城堡走廊3 (兩幅畫之間有洞)",
+                img: "./src/HowToGo/NinjaCastle/Map5.png",
+            },{
+                text: "7. 楓葉古城：城堡走廊4 (三幅畫)",
+                img: "./src/HowToGo/NinjaCastle/Map6.png",
+            },{
+                text: "8. 楓葉古城：城堡走廊5 (中間地上有屏風)",
+                img: "./src/HowToGo/NinjaCastle/Map7.png",
+            },{
+                text: "9. 楓葉古城：城堡走廊6 (右上角有樓梯)",
+                img: "./src/HowToGo/NinjaCastle/Map8.png",
+            }
+        ],
+    }
+]
 
+// Modal物件
+const howToGoModal = new bootstrap.Modal(document.querySelector('#Modal_how_to_go'));
 // Vue實體
 const requirementListVm = Vue.createApp({
     data() {
@@ -446,6 +510,13 @@ const detailVm = Vue.createApp({
         }
     }
 }).mount('#Div_requirement_detail');
+const howToGoVm = Vue.createApp({
+    data() {
+        return {
+            content: {},
+        }
+    }
+}).mount('#Modal_how_to_go');
 
 // 切換頁面
 function showPage(page) {
@@ -467,5 +538,12 @@ function showDetail(el) {
     if(dataIndex) {
         detailVm.detail = details[dataIndex];
         showPage('detail');
+    }
+}
+function showHowToGo(el) {
+    const dataIndex = el.getAttribute('data-index');
+    if(dataIndex) {
+        howToGoVm.content = howToGos[dataIndex];
+        howToGoModal.show();
     }
 }
