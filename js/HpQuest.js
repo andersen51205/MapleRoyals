@@ -10,8 +10,11 @@ const requirements = [
         title: "維多利亞島",
         image: "./src/Quest/Victoria1.png",
     },{
-        title: "水世界",
+        title: "水世界1",
         image: "./src/Quest/Aquarium1.png",
+    },{
+        title: "水世界2",
+        image: "./src/Quest/Aquarium2.png",
     },{
         title: "玩具城",
         image: "./src/Quest/Ludibrium1.png",
@@ -137,7 +140,7 @@ const details = [
             },
         }]
     },{
-        title: "水世界",
+        title: "水世界1",
         info: "./src/Quest/Aquarium1.png",
         rows: [{
             mob: "./src/Mobs/Squids.png",
@@ -160,6 +163,31 @@ const details = [
             mapBtn: {
                 img: "./src/Map/TheDangerousCave.png",
                 title: "水世界：危險的洞穴",
+            },
+        }]
+    },{
+        title: "水世界2",
+        info: "./src/Quest/Aquarium2.png",
+        rows: [{
+            mob: "./src/Mobs/Lycanthrope.png",
+            location: '冰原雪域：狼的領土3 (換頻打怪)',
+            mapBtn: {
+                img: "./src/Map/WolfTerritoryIII.png",
+                title: "冰原雪域：狼的領土3",
+            },
+        },{
+            mob: "./src/Mobs/ColdShark.png",
+            location: '水世界：受難船的墓地',
+            mapBtn: {
+                img: "./src/Map/TheGraveOfWreckedShip.png",
+                title: "水世界：受難船的墓地",
+            },
+        },{
+            mob: "./src/Mobs/Goby.png",
+            location: '水世界：深海峽谷2',
+            mapBtn: {
+                img: "./src/Map/DeepSeaGorgeII.png",
+                title: "水世界：深海峽谷2",
             },
         }]
     },{
