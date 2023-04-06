@@ -25,6 +25,9 @@ const requirements = [
         title: "神木村3",
         image: "./src/Quest/Leafre3.png",
     },{
+        title: "神木村4",
+        image: "./src/Quest/Leafre4.png",
+    },{
         title: "新葉城1",
         image: "./src/Quest/NLC1.png",
     },{
@@ -268,6 +271,31 @@ const details = [
             mapBtn: {
                 img: "./src/Map/WestLeafreForest.png",
                 title: "神木村：西邊森林",
+            },
+        }]
+    },{
+        title: "神木村4",
+        info: "./src/Quest/Leafre4.png",
+        rows: [{
+            mob: "./src/Mobs/RedKentaurus.png",
+            location: '神木村：火焰半人馬領土',
+            mapBtn: {
+                img: "./src/Map/TheAreaOfRedKentaurus.png",
+                title: "神木村：火焰半人馬領土",
+            },
+        },{
+            mob: "./src/Mobs/Beetle.png",
+            location: '神木村：東邊森林',
+            mapBtn: {
+                img: "./src/Map/EastForest.png",
+                title: "神木村：東邊森林",
+            },
+        },{
+            mob: "./src/Mobs/BloodHarp.png",
+            location: '神木村：天空之巢2',
+            mapBtn: {
+                img: "./src/Map/SkyNestII.png",
+                title: "神木村：天空之巢2",
             },
         }]
     },{
