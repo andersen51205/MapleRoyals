@@ -40,8 +40,11 @@ const requirements = [
         title: "新葉城2",
         image: "./src/Quest/NLC2.png",
     },{
-        title: "新加坡",
+        title: "新加坡1",
         image: "./src/Quest/CBD1.png",
+    },{
+        title: "新加坡2",
+        image: "./src/Quest/CBD2.png",
     },{
         title: "世界旅行1",
         image: "./src/Quest/WorldTravel1.png",
@@ -429,7 +432,7 @@ const details = [
             },
         }]
     },{
-        title: "新加坡",
+        title: "新加坡1",
         info: "./src/Quest/CBD1.png",
         rows: [{
             mob: "./src/Mobs/Duku.png",
@@ -451,6 +454,31 @@ const details = [
             mapBtn: {
                 img: "./src/Map/UluEstateII.png",
                 title: "新加坡：烏魯莊園Ⅱ",
+            },
+        }]
+    },{
+        title: "新加坡2",
+        info: "./src/Quest/CBD2.png",
+        rows: [{
+            mob: "./src/Mobs/Vikerola.png",
+            location: '馬來西亞：夢幻樂園3',
+            mapBtn: {
+                img: "./src/Map/FantasyThemeParkIII.png",
+                title: "馬來西亞：夢幻樂園3",
+            },
+        },{
+            mob: "./src/Mobs/Veetron.png",
+            location: '新加坡：烏魯莊園Ⅱ',
+            mapBtn: {
+                img: "./src/Map/UluEstateII.png",
+                title: "新加坡：烏魯莊園Ⅱ",
+            },
+        },{
+            mob: "./src/Mobs/MrAnchor.png",
+            location: '新加坡：.幽靈船6',
+            mapBtn: {
+                img: "./src/Map/GhostShip6.png",
+                title: "新加坡：.幽靈船6",
             },
         }]
     },{
