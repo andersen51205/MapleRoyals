@@ -34,6 +34,9 @@ const requirements = [
         title: "神木村4",
         image: "./src/Quest/Leafre4.png",
     },{
+        title: "神木村5",
+        image: "./src/Quest/Leafre5.png",
+    },{
         title: "新葉城1",
         image: "./src/Quest/NLC1.png",
     },{
@@ -355,6 +358,36 @@ const details = [
             mapBtn: {
                 img: "./src/Map/SkyNestII.png",
                 title: "神木村：天空之巢2",
+            },
+        }]
+    },{
+        title: "神木村5",
+        info: "./src/Quest/Leafre5.png",
+        rows: [{
+            mob: "./src/Mobs/DualBeetle.png",
+            location: '神木村：東邊境界',
+            mapBtn: {
+                img: "./src/Map/EastBorder.png",
+                title: "神木村：東邊境界",
+            },
+        },{
+            mob: "./src/Mobs/DarkRash.png",
+            location: '神木村：毛毛森林<br>(從"西邊境界"進入)',
+            mapBtn: {
+                content : "進入位置",
+                img: "./src/Map/WestBorder.png",
+                title: "神木村：西邊境界",
+            },
+            miniMapBtn:{
+                img: "./src/Minimap/PeachMonkeyForest.png",
+                title: "「神木村：毛毛森林」的入口處",
+            },
+        },{
+            mob: "./src/Mobs/Hankie.png",
+            location: '神木村：怪脾氣森林',
+            mapBtn: {
+                img: "./src/Map/CrankyForest.png",
+                title: "神木村：怪脾氣森林",
             },
         }]
     },{
