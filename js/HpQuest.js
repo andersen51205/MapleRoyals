@@ -37,6 +37,9 @@ const requirements = [
         title: "神木村5",
         image: "./src/Quest/Leafre5.png",
     },{
+        title: "神木村6",
+        image: "./src/Quest/Leafre6.png",
+    },{
         title: "新葉城1",
         image: "./src/Quest/NLC1.png",
     },{
@@ -388,6 +391,36 @@ const details = [
             mapBtn: {
                 img: "./src/Map/CrankyForest.png",
                 title: "神木村：怪脾氣森林",
+            },
+        }]
+    },{
+        title: "神木村6",
+        info: "./src/Quest/Leafre6.png",
+        rows: [{
+            mob: "./src/Mobs/Rexton.png",
+            location: '神木村：龍森林II',
+            mapBtn: {
+                img: "./src/Map/DragonForestII.png",
+                title: "神木村：龍森林II",
+            },
+        },{
+            mob: "./src/Mobs/NestGolem.png",
+            location: '神木村：危險的龍之巢穴<br>(下層左邊的梯子、中層中間的梯子<br>比較不容易被擊落)',
+            mapBtn: {
+                img: "./src/Map/DangerousDragonNest.png",
+                title: "神木村：危險的龍之巢穴",
+            },
+        },{
+            mob: "./src/Mobs/RedWyvern.png",
+            location: '神木村：紅翼龍巢穴<br>(從"峽谷西側路"進入)',
+            mapBtn: {
+                content: "進入位置",
+                img: "./src/Map/WestRoad.png",
+                title: "神木村：峽谷西側路",
+            },
+            miniMapBtn:{
+                img: "./src/Minimap/RedWyvernNest.png",
+                title: "「神木村：紅翼龍巢穴」的入口處",
             },
         }]
     },{
