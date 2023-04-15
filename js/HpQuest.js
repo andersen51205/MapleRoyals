@@ -10,6 +10,9 @@ const requirements = [
         title: "維多利亞島",
         image: "./src/Quest/Victoria1.png",
     },{
+        title: "武陵桃園",
+        image: "./src/Quest/MuLung1.png",
+    },{
         title: "水世界1",
         image: "./src/Quest/Aquarium1.png",
     },{
@@ -149,6 +152,36 @@ const details = [
             miniMapBtn:{
                 img: "./src/Minimap/Camp3.png",
                 title: "「遺跡發掘地 : 第三軍營」的入口處",
+            },
+        }]
+    },{
+        title: "武陵桃園",
+        info: "./src/Quest/MuLung1.png",
+        rows: [{
+            mob: "./src/Mobs/Saitie.png",
+            location: '瑪迦提亞城 : 閒人勿入',
+            mapBtn: {
+                content : "進入位置",
+                img: "./src/Map/LabAreaC2.png",
+                title: "瑪迦提亞城 : 研究所C-2區",
+            },
+            miniMapBtn: {
+                img: "./src/Minimap/AuthorizedPersonnelOnly.png",
+                title: "瑪迦提亞城 : 閒人勿入",
+            },
+        },{
+            mob: "./src/Mobs/PeachMonkey.png",
+            location: '桃花仙境 : 仙桃果園3',
+            mapBtn: {
+                img: "./src/Map/PeachFarmIII.png",
+                title: "桃花仙境 : 仙桃果園3",
+            },
+        },{
+            mob: "./src/Mobs/MrAlli.png",
+            location: '靈藥幻境 : 偏僻泥沼',
+            mapBtn: {
+                img: "./src/Map/IsolatedSwamp.png",
+                title: "靈藥幻境 : 偏僻泥沼",
             },
         }]
     },{
