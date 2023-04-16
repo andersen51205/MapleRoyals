@@ -574,10 +574,10 @@ const details = [
             },
         },{
             mob: "./src/Mobs/MrAnchor.png",
-            location: '新加坡：.幽靈船6',
+            location: '新加坡：幽靈船6',
             mapBtn: {
                 img: "./src/Map/GhostShip6.png",
-                title: "新加坡：.幽靈船6",
+                title: "新加坡：幽靈船6",
             },
         }]
     },{
