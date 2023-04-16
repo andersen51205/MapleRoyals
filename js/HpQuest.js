@@ -55,6 +55,9 @@ const requirements = [
         title: "新加坡2",
         image: "./src/Quest/CBD2.png",
     },{
+        title: "新加坡3",
+        image: "./src/Quest/CBD3.png",
+    },{
         title: "世界旅行1",
         image: "./src/Quest/WorldTravel1.png",
     },{
@@ -574,10 +577,35 @@ const details = [
             },
         },{
             mob: "./src/Mobs/MrAnchor.png",
-            location: '新加坡：.幽靈船6',
+            location: '新加坡：幽靈船6',
             mapBtn: {
                 img: "./src/Map/GhostShip6.png",
-                title: "新加坡：.幽靈船6",
+                title: "新加坡：幽靈船6",
+            },
+        }]
+    },{
+        title: "新加坡3",
+        info: "./src/Quest/CBD3.png",
+        rows: [{
+            mob: "./src/Mobs/Gallopera.png",
+            location: '馬來西亞：幽靈世界入口',
+            mapBtn: {
+                img: "./src/Map/EntranceToSpookyWorld.png",
+                title: "馬來西亞：幽靈世界入口",
+            },
+        },{
+            mob: "./src/Mobs/Montrecer.png",
+            location: '新加坡：烏魯莊園3',
+            mapBtn: {
+                img: "./src/Map/UluEstateIII.png",
+                title: "新加坡：烏魯莊園3",
+            },
+        },{
+            mob: "./src/Mobs/Berserkie.png",
+            location: '新加坡：烏魯城入口',
+            mapBtn: {
+                img: "./src/Map/UluCityEntrance.png",
+                title: "新加坡：烏魯城入口",
             },
         }]
     },{
