@@ -43,6 +43,9 @@ const requirements = [
         title: "神木村6",
         image: "./src/Quest/Leafre6.png",
     },{
+        title: "神木村7",
+        image: "./src/Quest/Leafre7.png",
+    },{
         title: "新葉城1",
         image: "./src/Quest/NLC1.png",
     },{
@@ -457,6 +460,31 @@ const details = [
             miniMapBtn:{
                 img: "./src/Minimap/RedWyvernNest.png",
                 title: "「神木村：紅翼龍巢穴」的入口處",
+            },
+        }]
+    },{
+        title: "神木村7",
+        info: "./src/Quest/Leafre7.png",
+        rows: [{
+            mob: "./src/Mobs/GreenCornian.png",
+            location: '神木村：神秘森林',
+            mapBtn: {
+                img: "./src/Map/TheForestThatDisappeared.png",
+                title: "神木村：神秘森林",
+            },
+        },{
+            mob: "./src/Mobs/BlueKentaurus.png",
+            location: '神木村：寒冰半人馬領土',
+            mapBtn: {
+                img: "./src/Map/TheAreaOfBlueKentaurus.png",
+                title: "神木村：寒冰半人馬領土",
+            },
+        },{
+            mob: "./src/Mobs/Harp.png",
+            location: '神木村：天空之巢1',
+            mapBtn: {
+                img: "./src/Map/SkyNestI.png",
+                title: "神木村：天空之巢1",
             },
         }]
     },{
