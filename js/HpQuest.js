@@ -7,6 +7,9 @@ const requirements = [
         title: "綜合2",
         image: "./src/Quest/Misc2.png",
     },{
+        title: "綜合3",
+        image: "./src/Quest/Misc3.png",
+    },{
         title: "維多利亞島",
         image: "./src/Quest/Victoria1.png",
     },{
@@ -129,6 +132,36 @@ const details = [
                 img: "./src/Map/Lab-Unit202.png",
                 title: "瑪迦提亞城 : 研究所202號房",
             }
+        }]
+    },{
+        title: "綜合3",
+        info: "./src/Quest/Misc3.png",
+        rows: [{
+            mob: "./src/Mobs/Lucida.png",
+            location: '日本神社：天皇殿堂<br>(從"櫻花山林"進入)',
+            mapBtn: {
+                content : "進入位置",
+                img: "./src/Map/MushroomForest.png",
+                title: "日本神社：櫻花山林",
+            },
+            miniMapBtn:{
+                img: "./src/Minimap/HallOfMushroom.png",
+                title: "「日本神社：天皇殿堂」的入口處",
+            },
+        },{
+            mob: "./src/Mobs/Shark.png",
+            location: '水世界：受難船的墓地',
+            mapBtn: {
+                img: "./src/Map/TheGraveOfWreckedShip.png",
+                title: "水世界：受難船的墓地"
+            },
+        },{
+            mob: "./src/Mobs/Werewolf.png",
+            location: '冰原雪域：狼的領土1',
+            mapBtn: {
+                img: "./src/Map/WolfTerritoryI.png",
+                title: "冰原雪域：狼的領土1",
+            },
         }]
     },{
         title: "維多利亞島",
