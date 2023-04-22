@@ -711,7 +711,7 @@ const details = [
             mob: "./src/Mobs/Jonin.png",
             location: '楓葉古城：城堡走廊7 (黃色牆壁第一張圖)',
             howToGoBtn: {
-                index: 0,
+                name: "NinjaCastle",
             },
         },{
             mob: "./src/Mobs/BlackBear.png",
@@ -730,8 +730,8 @@ const details = [
         }]
     }
 ];
-const howToGos = [
-    {
+const howToGos = {
+    "NinjaCastle": {
         rows: [
             {
                 text: "1. 到日本神社找 <strong>Palanquin</strong> 前往楓葉古城",
@@ -760,10 +760,19 @@ const howToGos = [
             },{
                 text: "9. 楓葉古城：城堡走廊6 (右上角有樓梯)",
                 img: "./src/HowToGo/NinjaCastle/Map8.png",
+            },{
+                text: "10. 楓葉古城：城堡走廊7 (黃色牆壁第一張)",
+                img: "./src/HowToGo/NinjaCastle/Map9.png",
+            },{
+                text: "11. 楓葉古城：城堡走廊8 (黃色牆壁第二張)",
+                img: "./src/HowToGo/NinjaCastle/Map10.png",
+            },{
+                text: "12. 楓葉古城：城堡走廊9 (鎧甲武士)",
+                img: "./src/HowToGo/NinjaCastle/Map11.png",
             }
         ],
-    }
-]
+    },
+}
 
 // Modal物件
 const howToGoModal = new bootstrap.Modal(document.querySelector('#Modal_how_to_go'));
@@ -813,9 +822,9 @@ function showDetail(el) {
     }
 }
 function showHowToGo(el) {
-    const dataIndex = el.getAttribute('data-index');
-    if(dataIndex) {
-        howToGoVm.content = howToGos[dataIndex];
+    const dataName = el.getAttribute('data-name');
+    if(howToGos[dataName]) {
+        howToGoVm.content = howToGos[dataName];
         howToGoModal.show();
     }
 }
