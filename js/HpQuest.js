@@ -69,6 +69,9 @@ const requirements = [
     },{
         title: "世界旅行2",
         image: "./src/Quest/WorldTravel2.png",
+    },{
+        title: "世界旅行3",
+        image: "./src/Quest/WorldTravel3.png",
     }
 ];
 const details = [
@@ -727,6 +730,28 @@ const details = [
                 img: "./src/Map/FootOfTheMountain.png",
                 title: "廬山鎮：山腳",
             }
+        }]
+    },{
+        title: "世界旅行3",
+        info: "./src/Quest/WorldTravel3.png",
+        rows: [{
+            mob: "./src/Mobs/Python.png",
+            location: '泰國：雨林深處',
+            howToGoBtnDisabled: {
+                img: "",
+                title: "",
+            },
+        },{
+            mob: "./src/Mobs/Bain.png",
+            location: '昭和村：武器庫<br>(與昭和村<strong>Konpei</strong>對話，<br>'+
+                '選擇 <strong>2. Take me to the hideout</strong><br>'+
+                '進入大樓的最後一張圖)',
+        },{
+            mob: "./src/Mobs/Ninto.png",
+            location: '楓葉古城：城堡走廊8 (黃色牆壁第二張圖)',
+            howToGoBtn: {
+                name: "NinjaCastle",
+            },
         }]
     }
 ];
