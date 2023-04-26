@@ -55,6 +55,9 @@ const requirements = [
         title: "新葉城2",
         image: "./src/Quest/NLC2.png",
     },{
+        title: "新葉城3",
+        image: "./src/Quest/NLC3.png",
+    },{
         title: "新加坡1",
         image: "./src/Quest/CBD1.png",
     },{
@@ -591,6 +594,43 @@ const details = [
             mapBtn: {
                 img: "./src/Map/CrmisonwoodKeep.png",
                 title: "紅杉木堡壘：守護者城堡",
+            },
+            howToGoBtnDisabled: {
+                img: "",
+                title: "",
+            },
+        }]
+    },{
+        title: "新葉城3",
+        info: "./src/Quest/NLC3.png",
+        rows: [{
+            mob: "./src/Mobs/Windraider.png",
+            location: '守護者城堡：龍捲風走廊<br>(從"守護者城堡：大師大廳"進入)',
+            miniMapBtn: {
+                img: "./src/Minimap/TornadoCorridor.png",
+                title: "「守護者城堡：龍捲風走廊」的入口處",
+            },
+            howToGoBtnDisabled: {
+                img: "",
+                title: "",
+            },
+        },{
+            mob: "./src/Mobs/Firebrand.png",
+            location: '守護者城堡：地獄密室<br>(從"守護者城堡：大師大廳"進入)',
+            miniMapBtn: {
+                img: "./src/Minimap/TheInfernoChamber.png",
+                title: "「守護者城堡：地獄密室」的入口處",
+            },
+            howToGoBtnDisabled: {
+                img: "",
+                title: "",
+            },
+        },{
+            mob: "./src/Mobs/Stormbreaker.png",
+            location: '守護者城堡：風暴廳<br>(從"守護者城堡：大師大廳"進入)',
+            miniMapBtn: {
+                img: "./src/Minimap/Stormhall.png",
+                title: "「守護者城堡：風暴廳」的入口處",
             },
             howToGoBtnDisabled: {
                 img: "",
