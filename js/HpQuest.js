@@ -55,6 +55,9 @@ const requirements = [
         title: "新葉城2",
         image: "./src/Quest/NLC2.png",
     },{
+        title: "新葉城3",
+        image: "./src/Quest/NLC3.png",
+    },{
         title: "新加坡1",
         image: "./src/Quest/CBD1.png",
     },{
@@ -72,6 +75,9 @@ const requirements = [
     },{
         title: "世界旅行3",
         image: "./src/Quest/WorldTravel3.png",
+    },{
+        title: "世界旅行4",
+        image: "./src/Quest/WorldTravel4.png",
     }
 ];
 const details = [
@@ -598,6 +604,43 @@ const details = [
             },
         }]
     },{
+        title: "新葉城3",
+        info: "./src/Quest/NLC3.png",
+        rows: [{
+            mob: "./src/Mobs/Windraider.png",
+            location: '守護者城堡：龍捲風走廊<br>(從"守護者城堡：大師大廳"進入)',
+            miniMapBtn: {
+                img: "./src/Minimap/TornadoCorridor.png",
+                title: "「守護者城堡：龍捲風走廊」的入口處",
+            },
+            howToGoBtnDisabled: {
+                img: "",
+                title: "",
+            },
+        },{
+            mob: "./src/Mobs/Firebrand.png",
+            location: '守護者城堡：地獄密室<br>(從"守護者城堡：大師大廳"進入)',
+            miniMapBtn: {
+                img: "./src/Minimap/TheInfernoChamber.png",
+                title: "「守護者城堡：地獄密室」的入口處",
+            },
+            howToGoBtnDisabled: {
+                img: "",
+                title: "",
+            },
+        },{
+            mob: "./src/Mobs/Stormbreaker.png",
+            location: '守護者城堡：風暴廳<br>(從"守護者城堡：大師大廳"進入)',
+            miniMapBtn: {
+                img: "./src/Minimap/Stormhall.png",
+                title: "「守護者城堡：風暴廳」的入口處",
+            },
+            howToGoBtnDisabled: {
+                img: "",
+                title: "",
+            },
+        }]
+    },{
         title: "新加坡1",
         info: "./src/Quest/CBD1.png",
         rows: [{
@@ -752,6 +795,29 @@ const details = [
             howToGoBtn: {
                 name: "NinjaCastle",
             },
+        }]
+    },{
+        title: "世界旅行4",
+        info: "./src/Quest/WorldTravel4.png",
+        rows: [{
+            mob: "./src/Mobs/FemaleBurglar.png",
+            location: '廬山鎮：山路2',
+            mapBtn: {
+                img: "./src/Map/MountainRoad2.png",
+                title: "廬山鎮：山路2",
+            },
+        },{
+            mob: "./src/Mobs/MaleBurglar.png",
+            location: '廬山鎮：山路2',
+            mapBtn: {
+                img: "./src/Map/MountainRoad2.png",
+                title: "廬山鎮：山路2",
+            },
+        },{
+            mob: "./src/Mobs/RedSlime.png",
+            location: '昭和村：神秘溫泉<br>(與昭和村<strong>Hikari</strong>對話，<br>'+
+                '選擇 <strong>I wish to go to the bathhouse</strong><br>'+
+                '進入澡堂後從<strong>右方水龍頭中間</strong>進去神秘溫泉)',
         }]
     }
 ];
