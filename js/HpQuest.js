@@ -75,6 +75,9 @@ const requirements = [
     },{
         title: "世界旅行3",
         image: "./src/Quest/WorldTravel3.png",
+    },{
+        title: "世界旅行4",
+        image: "./src/Quest/WorldTravel4.png",
     }
 ];
 const details = [
@@ -792,6 +795,29 @@ const details = [
             howToGoBtn: {
                 name: "NinjaCastle",
             },
+        }]
+    },{
+        title: "世界旅行4",
+        info: "./src/Quest/WorldTravel4.png",
+        rows: [{
+            mob: "./src/Mobs/FemaleBurglar.png",
+            location: '廬山鎮：山路2',
+            mapBtn: {
+                img: "./src/Map/MountainRoad2.png",
+                title: "廬山鎮：山路2",
+            },
+        },{
+            mob: "./src/Mobs/MaleBurglar.png",
+            location: '廬山鎮：山路2',
+            mapBtn: {
+                img: "./src/Map/MountainRoad2.png",
+                title: "廬山鎮：山路2",
+            },
+        },{
+            mob: "./src/Mobs/RedSlime.png",
+            location: '昭和村：神秘溫泉<br>(與昭和村<strong>Hikari</strong>對話，<br>'+
+                '選擇 <strong>I wish to go to the bathhouse</strong><br>'+
+                '進入澡堂後從<strong>右方水龍頭中間</strong>進去神秘溫泉)',
         }]
     }
 ];
