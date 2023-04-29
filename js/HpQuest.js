@@ -28,6 +28,9 @@ const requirements = [
         title: "玩具城2",
         image: "./src/Quest/Ludibrium2.png",
     },{
+        title: "艾靈森林",
+        image: "./src/Quest/EllinForest1.png",
+    },{
         title: "神木村1",
         image: "./src/Quest/Leafre1.png",
     },{
@@ -341,6 +344,31 @@ const details = [
             mapBtn: {
                 img: "./src/Map/ForgottenPathOfTime4.png",
                 title: "玩具城鐘塔：遺忘的時間之路4",
+            },
+        }]
+    },{
+        title: "艾靈森林",
+        info: "./src/Quest/EllinForest1.png",
+        rows: [{
+            mob: "./src/Mobs/MossyMushroom.png",
+            location: '艾靈森林：菇菇山坡',
+            mapBtn: {
+                img: "./src/Map/MushroomHill.png",
+                title: "艾靈森林：菇菇山坡",
+            },
+        },{
+            mob: "./src/Mobs/TreeRod.png",
+            location: '艾靈森林：苔蘚森林西部地區2',
+            mapBtn: {
+                img: "./src/Map/WesternRegionOfMossyTreeForest2.png",
+                title: "艾靈森林：苔蘚森林西部地區2",
+            },
+        },{
+            mob: "./src/Mobs/StoneBug.png",
+            location: '艾靈森林：苔蘚森林南部地區1',
+            mapBtn: {
+                img: "./src/Map/SouthemRegionOfMossyTreeForest1.png",
+                title: "艾靈森林：苔蘚森林南部地區1",
             },
         }]
     },{
