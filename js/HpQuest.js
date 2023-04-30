@@ -28,8 +28,11 @@ const requirements = [
         title: "玩具城2",
         image: "./src/Quest/Ludibrium2.png",
     },{
-        title: "艾靈森林",
+        title: "艾靈森林1",
         image: "./src/Quest/EllinForest1.png",
+    },{
+        title: "艾靈森林2",
+        image: "./src/Quest/EllinForest2.png",
     },{
         title: "神木村1",
         image: "./src/Quest/Leafre1.png",
@@ -361,7 +364,7 @@ const details = [
     },
     // 艾靈森林
     {
-        title: "艾靈森林",
+        title: "艾靈森林1",
         info: "./src/Quest/EllinForest1.png",
         rows: [{
             mob: "./src/Mobs/MossyMushroom.png",
@@ -383,6 +386,31 @@ const details = [
             mapBtn: {
                 img: "./src/Map/SouthemRegionOfMossyTreeForest1.png",
                 title: "艾靈森林：苔蘚森林南部地區1",
+            },
+        }]
+    },{
+        title: "艾靈森林2",
+        info: "./src/Quest/EllinForest2.png",
+        rows: [{
+            mob: "./src/Mobs/PrimitiveBoar.png",
+            location: '艾靈森林：巨石山入口',
+            mapBtn: {
+                img: "./src/Map/BoulderMountainEntrance.png",
+                title: "艾靈森林：巨石山入口",
+            },
+        },{
+            mob: "./src/Mobs/AncientFairy.png",
+            location: '艾靈森林：蝴蝶精的森林2',
+            mapBtn: {
+                img: "./src/Map/FairyForest2.png",
+                title: "艾靈森林：蝴蝶精的森林2",
+            },
+        },{
+            mob: "./src/Mobs/ShiningFairy.png",
+            location: '艾靈森林：蝴蝶精的森林3',
+            mapBtn: {
+                img: "./src/Map/FairyForest3.png",
+                title: "艾靈森林：蝴蝶精的森林3",
             },
         }]
     },
