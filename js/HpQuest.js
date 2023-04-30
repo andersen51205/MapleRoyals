@@ -28,6 +28,12 @@ const requirements = [
         title: "玩具城2",
         image: "./src/Quest/Ludibrium2.png",
     },{
+        title: "艾靈森林1",
+        image: "./src/Quest/EllinForest1.png",
+    },{
+        title: "艾靈森林2",
+        image: "./src/Quest/EllinForest2.png",
+    },{
         title: "神木村1",
         image: "./src/Quest/Leafre1.png",
     },{
@@ -78,9 +84,13 @@ const requirements = [
     },{
         title: "世界旅行4",
         image: "./src/Quest/WorldTravel4.png",
+    },{
+        title: "世界旅行5",
+        image: "./src/Quest/WorldTravel5.png",
     }
 ];
 const details = [
+    // 綜合
     {
         title: "綜合1",
         info: "./src/Quest/Misc1.png",
@@ -172,7 +182,9 @@ const details = [
                 title: "冰原雪域：狼的領土1",
             },
         }]
-    },{
+    },
+    // 維多利亞島
+    {
         title: "維多利亞島",
         info: "./src/Quest/Victoria1.png",
         rows: [{
@@ -202,7 +214,9 @@ const details = [
                 title: "「遺跡發掘地 : 第三軍營」的入口處",
             },
         }]
-    },{
+    },
+    // 武陵桃園
+    {
         title: "武陵桃園",
         info: "./src/Quest/MuLung1.png",
         rows: [{
@@ -232,7 +246,9 @@ const details = [
                 title: "靈藥幻境 : 偏僻泥沼",
             },
         }]
-    },{
+    },
+    // 水世界
+    {
         title: "水世界1",
         info: "./src/Quest/Aquarium1.png",
         rows: [{
@@ -283,7 +299,9 @@ const details = [
                 title: "水世界：深海峽谷2",
             },
         }]
-    },{
+    },
+    // 玩具城
+    {
         title: "玩具城1",
         info: "./src/Quest/Ludibrium1.png",
         rows: [{
@@ -343,7 +361,61 @@ const details = [
                 title: "玩具城鐘塔：遺忘的時間之路4",
             },
         }]
+    },
+    // 艾靈森林
+    {
+        title: "艾靈森林1",
+        info: "./src/Quest/EllinForest1.png",
+        rows: [{
+            mob: "./src/Mobs/MossyMushroom.png",
+            location: '艾靈森林：菇菇山坡',
+            mapBtn: {
+                img: "./src/Map/MushroomHill.png",
+                title: "艾靈森林：菇菇山坡",
+            },
+        },{
+            mob: "./src/Mobs/TreeRod.png",
+            location: '艾靈森林：苔蘚森林西部地區2',
+            mapBtn: {
+                img: "./src/Map/WesternRegionOfMossyTreeForest2.png",
+                title: "艾靈森林：苔蘚森林西部地區2",
+            },
+        },{
+            mob: "./src/Mobs/StoneBug.png",
+            location: '艾靈森林：苔蘚森林南部地區1',
+            mapBtn: {
+                img: "./src/Map/SouthemRegionOfMossyTreeForest1.png",
+                title: "艾靈森林：苔蘚森林南部地區1",
+            },
+        }]
     },{
+        title: "艾靈森林2",
+        info: "./src/Quest/EllinForest2.png",
+        rows: [{
+            mob: "./src/Mobs/PrimitiveBoar.png",
+            location: '艾靈森林：巨石山入口',
+            mapBtn: {
+                img: "./src/Map/BoulderMountainEntrance.png",
+                title: "艾靈森林：巨石山入口",
+            },
+        },{
+            mob: "./src/Mobs/AncientFairy.png",
+            location: '艾靈森林：蝴蝶精的森林2',
+            mapBtn: {
+                img: "./src/Map/FairyForest2.png",
+                title: "艾靈森林：蝴蝶精的森林2",
+            },
+        },{
+            mob: "./src/Mobs/ShiningFairy.png",
+            location: '艾靈森林：蝴蝶精的森林3',
+            mapBtn: {
+                img: "./src/Map/FairyForest3.png",
+                title: "艾靈森林：蝴蝶精的森林3",
+            },
+        }]
+    },
+    // 神木村
+    {
         title: "神木村1",
         info: "./src/Quest/Leafre1.png",
         rows: [{
@@ -529,7 +601,9 @@ const details = [
                 title: "神木村：天空之巢1",
             },
         }]
-    },{
+    },
+    // 新葉城
+    {
         title: "新葉城1",
         info: "./src/Quest/NLC1.png",
         rows: [{
@@ -640,7 +714,9 @@ const details = [
                 title: "",
             },
         }]
-    },{
+    },
+    // 新加坡
+    {
         title: "新加坡1",
         info: "./src/Quest/CBD1.png",
         rows: [{
@@ -715,7 +791,9 @@ const details = [
                 title: "新加坡：烏魯城入口",
             },
         }]
-    },{
+    },
+    // 世界旅行
+    {
         title: "世界旅行1",
         info: "./src/Quest/WorldTravel1.png",
         rows: [{
@@ -818,6 +896,29 @@ const details = [
             location: '昭和村：神秘溫泉<br>(與昭和村<strong>Hikari</strong>對話，<br>'+
                 '選擇 <strong>I wish to go to the bathhouse</strong><br>'+
                 '進入澡堂後從<strong>右方水龍頭中間</strong>進去神秘溫泉)',
+        }]
+    },{
+        title: "世界旅行5",
+        info: "./src/Quest/WorldTravel5.png",
+        rows: [{
+            mob: "./src/Mobs/IncenseBurnerDemon.png",
+            location: '廬山鎮：少林寺廣場',
+            mapBtn: {
+                img: "./src/Map/TemplePlaza.png",
+                title: "廬山鎮：少林寺廣場",
+            },
+        },{
+            mob: "./src/Mobs/ExtraD.png",
+            location: '昭和村：金融中心<br>(與昭和村<strong>Konpei</strong>對話，<br>'+
+            '選擇 <strong>2. Take me to the hideout</strong><br>'+
+            '進入大樓的第二張圖)',
+        },{
+            mob: "./src/Mobs/GiantEagle.png",
+            location: '廬山鎮：山路1',
+            mapBtn: {
+                img: "./src/Map/MountainRoad1.png",
+                title: "廬山鎮：山路1",
+            },
         }]
     }
 ];
