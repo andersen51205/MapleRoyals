@@ -87,6 +87,7 @@ const requirements = [
     }
 ];
 const details = [
+    // 綜合
     {
         title: "綜合1",
         info: "./src/Quest/Misc1.png",
@@ -178,7 +179,9 @@ const details = [
                 title: "冰原雪域：狼的領土1",
             },
         }]
-    },{
+    },
+    // 維多利亞島
+    {
         title: "維多利亞島",
         info: "./src/Quest/Victoria1.png",
         rows: [{
@@ -208,7 +211,9 @@ const details = [
                 title: "「遺跡發掘地 : 第三軍營」的入口處",
             },
         }]
-    },{
+    },
+    // 武陵桃園
+    {
         title: "武陵桃園",
         info: "./src/Quest/MuLung1.png",
         rows: [{
@@ -238,7 +243,9 @@ const details = [
                 title: "靈藥幻境 : 偏僻泥沼",
             },
         }]
-    },{
+    },
+    // 水世界
+    {
         title: "水世界1",
         info: "./src/Quest/Aquarium1.png",
         rows: [{
@@ -289,7 +296,9 @@ const details = [
                 title: "水世界：深海峽谷2",
             },
         }]
-    },{
+    },
+    // 玩具城
+    {
         title: "玩具城1",
         info: "./src/Quest/Ludibrium1.png",
         rows: [{
@@ -349,7 +358,9 @@ const details = [
                 title: "玩具城鐘塔：遺忘的時間之路4",
             },
         }]
-    },{
+    },
+    // 艾靈森林
+    {
         title: "艾靈森林",
         info: "./src/Quest/EllinForest1.png",
         rows: [{
@@ -374,7 +385,9 @@ const details = [
                 title: "艾靈森林：苔蘚森林南部地區1",
             },
         }]
-    },{
+    },
+    // 神木村
+    {
         title: "神木村1",
         info: "./src/Quest/Leafre1.png",
         rows: [{
@@ -560,7 +573,9 @@ const details = [
                 title: "神木村：天空之巢1",
             },
         }]
-    },{
+    },
+    // 新葉城
+    {
         title: "新葉城1",
         info: "./src/Quest/NLC1.png",
         rows: [{
@@ -671,7 +686,9 @@ const details = [
                 title: "",
             },
         }]
-    },{
+    },
+    // 新加坡
+    {
         title: "新加坡1",
         info: "./src/Quest/CBD1.png",
         rows: [{
@@ -746,7 +763,9 @@ const details = [
                 title: "新加坡：烏魯城入口",
             },
         }]
-    },{
+    },
+    // 世界旅行
+    {
         title: "世界旅行1",
         info: "./src/Quest/WorldTravel1.png",
         rows: [{
