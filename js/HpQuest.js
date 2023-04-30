@@ -81,6 +81,9 @@ const requirements = [
     },{
         title: "世界旅行4",
         image: "./src/Quest/WorldTravel4.png",
+    },{
+        title: "世界旅行5",
+        image: "./src/Quest/WorldTravel5.png",
     }
 ];
 const details = [
@@ -846,6 +849,29 @@ const details = [
             location: '昭和村：神秘溫泉<br>(與昭和村<strong>Hikari</strong>對話，<br>'+
                 '選擇 <strong>I wish to go to the bathhouse</strong><br>'+
                 '進入澡堂後從<strong>右方水龍頭中間</strong>進去神秘溫泉)',
+        }]
+    },{
+        title: "世界旅行5",
+        info: "./src/Quest/WorldTravel5.png",
+        rows: [{
+            mob: "./src/Mobs/IncenseBurnerDemon.png",
+            location: '廬山鎮：少林寺廣場',
+            mapBtn: {
+                img: "./src/Map/TemplePlaza.png",
+                title: "廬山鎮：少林寺廣場",
+            },
+        },{
+            mob: "./src/Mobs/ExtraD.png",
+            location: '昭和村：金融中心<br>(與昭和村<strong>Konpei</strong>對話，<br>'+
+            '選擇 <strong>2. Take me to the hideout</strong><br>'+
+            '進入大樓的第二張圖)',
+        },{
+            mob: "./src/Mobs/GiantEagle.png",
+            location: '廬山鎮：山路1',
+            mapBtn: {
+                img: "./src/Map/MountainRoad1.png",
+                title: "廬山鎮：山路1",
+            },
         }]
     }
 ];
