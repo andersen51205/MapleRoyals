@@ -36,6 +36,18 @@ header.component('nav-component', {
                                 </a>
                             </div>
                         </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle active"
+                                    href="#" role="button"
+                                    data-bs-toggle="dropdown">
+                                <i class="fa-solid fa-screwdriver-wrench"></i> 小工具
+                            </a>
+                            <div class="dropdown-menu">
+                                <a class="dropdown-item" href="./ProbabilityCalculator.html">
+                                    <i class="fa-solid fa-dice"></i> 機率計算器
+                                </a>
+                            </div>
+                        </li>
                     </ul>
                 </div>
             </div>
