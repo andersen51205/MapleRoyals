@@ -25,7 +25,7 @@
             <div class="container pt-3">
                 <div class="row justify-content-center">
                     <!-- 任務資訊 -->
-                    <div id="Div_quest_info" class="col-10">
+                    <div id="Div_quest_info" class="col-12 col-xxl-10">
                         <h3 class="mt-0 mb-3">加血任務</h3>
                         <table class="table table-bordered table-padding-80">
                             <tbody>
@@ -92,7 +92,7 @@
                             </button>
                             <h3 class="ms-3 my-0">任務需求</h3>
                         </div>
-                        <div class="row row-cols-5 g-2 mb-3">
+                        <div class="row row-cols-2 row-cols-md-3 row-cols-lg-4 row-cols-xxl-5 g-2 mb-3">
                             <div class="col" v-for="(item, index) in requirements">
                                 <div class="card cursor-pointer" v-bind:data-index="index" onclick="showDetail(this)">
                                     <div class="card">
@@ -107,7 +107,7 @@
                         </div>
                     </div>
                     <!-- 詳細資訊 -->
-                    <div id="Div_requirement_detail" class="col-10 d-none">
+                    <div id="Div_requirement_detail" class="col-12 col-xxl-10 d-none">
                         <div class="d-flex mb-3">
                             <button class="btn btn-outline-secondary"
                                     onclick="showPage('requirement')">
