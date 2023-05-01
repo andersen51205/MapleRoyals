@@ -24,76 +24,76 @@
         <main id="Main_content" class="nav-padding">
             <div class="container pt-3">
                 <div class="row justify-content-center">
-                    <div class="col-10">
-                        <!-- 任務資訊 -->
-                        <div id="Div_quest_info">
-                            <h3 class="mt-0 mb-3">加血任務</h3>
-                            <table class="table table-bordered table-padding-80">
-                                <tbody>
-                                    <tr>
-                                        <td class="text-center">任務NPC</td>
-                                        <td colspan="6">
-                                            <img src="./src/NPC/Reuel.png" alt="Image Not Found">
-                                            <button class="btn btn-outline-primary ms-3 py-1"
-                                                data-src="./src/Map/Zenumist2ndFloorHallway.png"
-                                                data-mapName="瑪迦提亞城：研究所2樓走道"
-                                                onclick="showMap(this)">
-                                                <i class="fa-solid fa-location-dot"></i> 位置
-                                            </button>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td class="text-center">等級限制</td>
-                                        <td colspan="6">120等，法師以外的職業</td>
-                                    </tr>
-                                    <tr>
-                                        <td class="text-center">任務需求</td>
-                                        <td colspan="6">
-                                            隨機一種組合
-                                            <button class="btn btn-outline-primary ms-3 py-1"
-                                                    onclick="showPage('requirement')">
-                                                <i class="fa-solid fa-magnifying-glass"></i> 查看
-                                            </button>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td class="text-center">次數</td>
-                                        <td colspan="6">每天一次</td>
-                                    </tr>
-                                    <tr>
-                                        <td class="text-center">備註</td>
-                                        <td colspan="6">角色在175等時，若未達到基礎生命值，則沒有上限次數。</td>
-                                    </tr>
-                                    <tr>
-                                        <td class="text-center" style="width:16%" rowspan="2">基礎生命值</td>
-                                        <td class="text-center" style="width:14%">初心者</td>
-                                        <td class="text-center" style="width:14%">英雄</td>
-                                        <td class="text-center" style="width:14%">黑騎士/聖騎士</td>
-                                        <td class="text-center" style="width:14%">弓箭手/盜賊</td>
-                                        <td class="text-center" style="width:14%">拳霸</td>
-                                        <td class="text-center" style="width:14%">槍神</td>
-                                    </tr>
-                                    <tr>
-                                        <td class="text-center">6143</td>
-                                        <td class="text-center">17983</td>
-                                        <td class="text-center">17658</td>
-                                        <td class="text-center">9500</td>
-                                        <td class="text-center">14945</td>
-                                        <td class="text-center">9995</td>
-                                    </tr>
-                                </tbody>
-                            </table>
+                    <!-- 任務資訊 -->
+                    <div id="Div_quest_info" class="col-10">
+                        <h3 class="mt-0 mb-3">加血任務</h3>
+                        <table class="table table-bordered table-padding-80">
+                            <tbody>
+                                <tr>
+                                    <td class="text-center">任務NPC</td>
+                                    <td colspan="6">
+                                        <img src="./src/NPC/Reuel.png" alt="Image Not Found">
+                                        <button class="btn btn-outline-primary ms-3 py-1"
+                                            data-src="./src/Map/Zenumist2ndFloorHallway.png"
+                                            data-mapName="瑪迦提亞城：研究所2樓走道"
+                                            onclick="showMap(this)">
+                                            <i class="fa-solid fa-location-dot"></i> 位置
+                                        </button>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="text-center">等級限制</td>
+                                    <td colspan="6">120等，法師以外的職業</td>
+                                </tr>
+                                <tr>
+                                    <td class="text-center">任務需求</td>
+                                    <td colspan="6">
+                                        隨機一種組合
+                                        <button class="btn btn-outline-primary ms-3 py-1"
+                                                onclick="showPage('requirement')">
+                                            <i class="fa-solid fa-magnifying-glass"></i> 查看
+                                        </button>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="text-center">次數</td>
+                                    <td colspan="6">每天一次</td>
+                                </tr>
+                                <tr>
+                                    <td class="text-center">備註</td>
+                                    <td colspan="6">角色在175等時，若未達到基礎生命值，則沒有上限次數。</td>
+                                </tr>
+                                <tr>
+                                    <td class="text-center" style="width:16%" rowspan="2">基礎生命值</td>
+                                    <td class="text-center" style="width:14%">初心者</td>
+                                    <td class="text-center" style="width:14%">英雄</td>
+                                    <td class="text-center" style="width:14%">黑騎士/聖騎士</td>
+                                    <td class="text-center" style="width:14%">弓箭手/盜賊</td>
+                                    <td class="text-center" style="width:14%">拳霸</td>
+                                    <td class="text-center" style="width:14%">槍神</td>
+                                </tr>
+                                <tr>
+                                    <td class="text-center">6143</td>
+                                    <td class="text-center">17983</td>
+                                    <td class="text-center">17658</td>
+                                    <td class="text-center">9500</td>
+                                    <td class="text-center">14945</td>
+                                    <td class="text-center">9995</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <!-- 任務需求 -->
+                    <div id="Div_requirement_list" class="col-12 d-none">
+                        <div class="d-flex mb-3">
+                            <button class="btn btn-outline-secondary"
+                                    onclick="showPage('info')">
+                                <i class="fa-solid fa-arrow-left"></i> 返回
+                            </button>
+                            <h3 class="ms-3 my-0">任務需求</h3>
                         </div>
-                        <!-- 任務需求 -->
-                        <div id="Div_requirement_list" class="row d-none">
-                            <div class="d-flex mb-3">
-                                <button class="btn btn-outline-secondary"
-                                        onclick="showPage('info')">
-                                    <i class="fa-solid fa-arrow-left"></i> 返回
-                                </button>
-                                <h3 class="ms-3 my-0">任務需求</h3>
-                            </div>
-                            <div class="col-6 col-md-4 col-xl-3 mb-4" v-for="(item, index) in requirements">
+                        <div class="row row-cols-5 g-2 mb-3">
+                            <div class="col" v-for="(item, index) in requirements">
                                 <div class="card cursor-pointer" v-bind:data-index="index" onclick="showDetail(this)">
                                     <div class="card">
                                         <div class="card-header d-flex justify-content-between align-items-center">
@@ -105,116 +105,116 @@
                                 </div>
                             </div>
                         </div>
-                        <!-- 詳細資訊 -->
-                        <div id="Div_requirement_detail" class="d-none">
-                            <div class="d-flex mb-3">
-                                <button class="btn btn-outline-secondary"
-                                        onclick="showPage('requirement')">
-                                    <i class="fa-solid fa-arrow-left"></i> 返回
-                                </button>
-                                <h3 class="ms-3 my-0">任務需求 - {{ detail.title }}</h3>
-                            </div>
-                            <table class="table table-bordered mt-3">
-                                <thead>
-                                    <tr>
-                                        <th>
-                                            <div class="ml-2">任務資訊</div>
-                                        </th>
-                                        <th>
-                                            <div class="ml-2">掉落怪物</div>
-                                        </th>
-                                        <th>
-                                            <div class="ml-2">建議地點</div>
-                                        </th>
-                                    </tr>
-                                </thead>
-                                <tbody>
-                                    <tr v-for="(row, index) in detail.rows">
-                                        <!-- 任務資訊 -->
-                                        <td class="text-center" rowspan="3" v-if="index === 0">
-                                            <img v-bind:src="detail.info" alt="Image Not Found">
-                                        </td>
-                                        <!-- 掉落怪物 -->
-                                        <td>
-                                            <img v-bind:src="row.mob" :width="row.width ? row.width : 200"
-                                                alt="Image Not Found">
-                                        </td>
-                                        <!-- 建議地點 -->
-                                        <td>
-                                            <div class="d-inline-block align-middle text-center ms-3"
-                                                v-html="row.location">
-                                                <!-- 地圖名稱 -->
-                                            </div>
-                                            <div class="d-inline-block align-middle ms-3">
-                                                <!-- 一般地圖 -->
-                                                <button class="btn btn-outline-primary py-1"
-                                                        v-if="row.mapBtn"
-                                                        v-bind:data-src="row.mapBtn.img"
-                                                        v-bind:data-mapName="row.mapBtn.title"
-                                                        onclick="showMap(this)">
-                                                    <i class="fa-solid fa-location-dot"></i> {{ row.mapBtn.content ? row.mapBtn.content : '位置' }}
-                                                </button>
-                                                <!-- 隱藏地圖 -->
-                                                <!-- <button class="btn btn-outline-primary py-1"
-                                                        v-if="row.hiddenMapBtn"
-                                                        v-bind:data-src="row.hiddenMap.mapImg"
-                                                        v-bind:data-mapName="row.hiddenMap.mapName"
-                                                        onclick="showMap(this)">
-                                                    <i class="fa-solid fa-location-dot"></i> 進入位置
-                                                </button> -->
-                                                <button class="btn btn-outline-primary ms-2 py-1"
-                                                        v-if="row.miniMapBtn"
-                                                        v-bind:data-src="row.miniMapBtn.img"
-                                                        v-bind:data-mapName="row.miniMapBtn.title"
-                                                        onclick="showMiniMap(this)">
-                                                    <i class="fa-solid fa-map"></i> 入口
-                                                </button>
-                                                <!-- 如何前往 -->
-                                                <button class="btn btn-outline-primary ms-2 py-1"
-                                                        v-if="row.howToGoBtnDisabled"
-                                                        disabled>
-                                                    <i class="fa-solid fa-route"></i> 如何前往
-                                                </button>
-                                                <!-- <button class="btn btn-outline-primary ms-2 py-1"
-                                                        data-bs-toggle="modal"
-                                                        v-if="row.howToGoBtn"
-                                                        v-bind:data-bs-target="row.howToGoBtn.target">
-                                                    <i class="fa-solid fa-route"></i> 如何前往
-                                                </button> -->
-                                                <button class="btn btn-outline-primary ms-2 py-1"
-                                                        v-if="row.howToGoBtn"
-                                                        v-bind:data-name="row.howToGoBtn.name"
-                                                        onclick="showHowToGo(this)">
-                                                    <i class="fa-solid fa-route"></i> 如何前往
-                                                </button>
-                                                <!-- 捷徑 -->
-                                                <button class="btn btn-outline-primary ms-2 py-1"
-                                                        v-if="row.shortCutBtn"
-                                                        disabled>
-                                                    <i class="fa-solid fa-route"></i> 捷徑
-                                                </button>
-                                                <!-- 前置任務 -->
-                                                <button class="btn btn-outline-primary ms-2 py-1"
-                                                        v-if="row.prequestBtn"
-                                                        v-bind:data-src="row.prequestBtn.img"
-                                                        v-bind:data-questName="row.prequestBtn.title"
-                                                        onclick="showQuest(this)">
-                                                    <i class="fa-solid fa-map"></i> 前置任務
-                                                </button>
-                                                <!-- 怪物重生點-->
-                                                <button class="btn btn-outline-primary ms-2 py-1"
-                                                        v-if="row.spawnPointBtn"
-                                                        v-bind:data-src="row.spawnPointBtn.img"
-                                                        v-bind:data-mapName="row.spawnPointBtn.title"
-                                                        onclick="showMiniMap(this)">
-                                                    <i class="fa-solid fa-triangle-exclamation"></i> 怪物重生點
-                                                </button>
-                                            </div>
-                                        </td>
-                                    </tr>
-                                </tbody>
-                            </table>
+                    </div>
+                    <!-- 詳細資訊 -->
+                    <div id="Div_requirement_detail" class="col-10 d-none">
+                        <div class="d-flex mb-3">
+                            <button class="btn btn-outline-secondary"
+                                    onclick="showPage('requirement')">
+                                <i class="fa-solid fa-arrow-left"></i> 返回
+                            </button>
+                            <h3 class="ms-3 my-0">任務需求 - {{ detail.title }}</h3>
                         </div>
+                        <table class="table table-bordered mt-3">
+                            <thead>
+                                <tr>
+                                    <th>
+                                        <div class="ml-2">任務資訊</div>
+                                    </th>
+                                    <th>
+                                        <div class="ml-2">掉落怪物</div>
+                                    </th>
+                                    <th>
+                                        <div class="ml-2">建議地點</div>
+                                    </th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr v-for="(row, index) in detail.rows">
+                                    <!-- 任務資訊 -->
+                                    <td class="text-center" rowspan="3" v-if="index === 0">
+                                        <img v-bind:src="detail.info" alt="Image Not Found">
+                                    </td>
+                                    <!-- 掉落怪物 -->
+                                    <td>
+                                        <img v-bind:src="row.mob" :width="row.width ? row.width : 200"
+                                            alt="Image Not Found">
+                                    </td>
+                                    <!-- 建議地點 -->
+                                    <td>
+                                        <div class="d-inline-block align-middle text-center ms-3"
+                                            v-html="row.location">
+                                            <!-- 地圖名稱 -->
+                                        </div>
+                                        <div class="d-inline-block align-middle ms-3">
+                                            <!-- 一般地圖 -->
+                                            <button class="btn btn-outline-primary py-1"
+                                                    v-if="row.mapBtn"
+                                                    v-bind:data-src="row.mapBtn.img"
+                                                    v-bind:data-mapName="row.mapBtn.title"
+                                                    onclick="showMap(this)">
+                                                <i class="fa-solid fa-location-dot"></i> {{ row.mapBtn.content ? row.mapBtn.content : '位置' }}
+                                            </button>
+                                            <!-- 隱藏地圖 -->
+                                            <!-- <button class="btn btn-outline-primary py-1"
+                                                    v-if="row.hiddenMapBtn"
+                                                    v-bind:data-src="row.hiddenMap.mapImg"
+                                                    v-bind:data-mapName="row.hiddenMap.mapName"
+                                                    onclick="showMap(this)">
+                                                <i class="fa-solid fa-location-dot"></i> 進入位置
+                                            </button> -->
+                                            <button class="btn btn-outline-primary ms-2 py-1"
+                                                    v-if="row.miniMapBtn"
+                                                    v-bind:data-src="row.miniMapBtn.img"
+                                                    v-bind:data-mapName="row.miniMapBtn.title"
+                                                    onclick="showMiniMap(this)">
+                                                <i class="fa-solid fa-map"></i> 入口
+                                            </button>
+                                            <!-- 如何前往 -->
+                                            <button class="btn btn-outline-primary ms-2 py-1"
+                                                    v-if="row.howToGoBtnDisabled"
+                                                    disabled>
+                                                <i class="fa-solid fa-route"></i> 如何前往
+                                            </button>
+                                            <!-- <button class="btn btn-outline-primary ms-2 py-1"
+                                                    data-bs-toggle="modal"
+                                                    v-if="row.howToGoBtn"
+                                                    v-bind:data-bs-target="row.howToGoBtn.target">
+                                                <i class="fa-solid fa-route"></i> 如何前往
+                                            </button> -->
+                                            <button class="btn btn-outline-primary ms-2 py-1"
+                                                    v-if="row.howToGoBtn"
+                                                    v-bind:data-name="row.howToGoBtn.name"
+                                                    onclick="showHowToGo(this)">
+                                                <i class="fa-solid fa-route"></i> 如何前往
+                                            </button>
+                                            <!-- 捷徑 -->
+                                            <button class="btn btn-outline-primary ms-2 py-1"
+                                                    v-if="row.shortCutBtn"
+                                                    disabled>
+                                                <i class="fa-solid fa-route"></i> 捷徑
+                                            </button>
+                                            <!-- 前置任務 -->
+                                            <button class="btn btn-outline-primary ms-2 py-1"
+                                                    v-if="row.prequestBtn"
+                                                    v-bind:data-src="row.prequestBtn.img"
+                                                    v-bind:data-questName="row.prequestBtn.title"
+                                                    onclick="showQuest(this)">
+                                                <i class="fa-solid fa-map"></i> 前置任務
+                                            </button>
+                                            <!-- 怪物重生點-->
+                                            <button class="btn btn-outline-primary ms-2 py-1"
+                                                    v-if="row.spawnPointBtn"
+                                                    v-bind:data-src="row.spawnPointBtn.img"
+                                                    v-bind:data-mapName="row.spawnPointBtn.title"
+                                                    onclick="showMiniMap(this)">
+                                                <i class="fa-solid fa-triangle-exclamation"></i> 怪物重生點
+                                            </button>
+                                        </div>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
                     </div>
                 </div>
             </div>
