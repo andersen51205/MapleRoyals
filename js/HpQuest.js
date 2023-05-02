@@ -55,6 +55,9 @@ const requirements = [
         title: "神木村7",
         image: "./src/Quest/HpQuest/Leafre7.png",
     },{
+        title: "神木村8",
+        image: "./src/Quest/HpQuest/Leafre8.png",
+    },{
         title: "新葉城1",
         image: "./src/Quest/HpQuest/NLC1.png",
     },{
@@ -599,6 +602,31 @@ const details = [
             mapBtn: {
                 img: "./src/Map/SkyNestI.png",
                 title: "神木村：天空之巢1",
+            },
+        }]
+    },{
+        title: "神木村8",
+        info: "./src/Quest/HpQuest/Leafre8.png",
+        rows: [{
+            mob: "./src/Mobs/EyeOfTime.png",
+            location: '時間神殿 : 回憶之路1',
+            mapBtn: {
+                img: "./src/Map/MemoryLane1.png",
+                title: "時間神殿 : 回憶之路1",
+            },
+        },{
+            mob: "./src/Mobs/DualBirk.png",
+            location: '神木村：森林岔道',
+            mapBtn: {
+                img: "./src/Map/ForestCrossroad.png",
+                title: "神木村：森林岔道",
+            },
+        },{
+            mob: "./src/Mobs/DarkWyvern.png",
+            location: '神木村：龍之巢穴入口',
+            mapBtn: {
+                img: "./src/Map/EntranceToDragonNest.png",
+                title: "神木村：龍之巢穴入口",
             },
         }]
     },
