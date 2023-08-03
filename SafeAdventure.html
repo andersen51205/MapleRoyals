@@ -29,7 +29,7 @@
                     <div class="col-10 border border-2 my-3" v-for="list in lists">
                         <div role="button" data-bs-toggle="collapse" v-bind:data-bs-target="list.target">
                             <h5 class="m-2 d-inline-block fw-bold">
-                                {{ list.title }} <i class="fa-solid fa-caret-down"></i>
+                                <span v-text="list.title"></span> <i class="fa-solid fa-caret-down"></i>
                             </h5>
                         </div>
                         <div v-bind:id="list.id" class="border-2 border-top collapse">
