@@ -66,6 +66,38 @@
                                     </tr>
                                 </tbody>
                             </table>
+                            <table class="table table-bordered table-padding-80">
+                                <tbody>
+                                    <tr>
+                                        <th class="fs-4" colspan="4">2. 迷失了</th>
+                                    </tr>
+                                    <tr>
+                                        <td class="text-center" style="width: 10%;">任務NPC</td>
+                                        <td>
+                                            <img src="/src/NPC/ElpamGorlab.png" alt="Image Not Found">
+                                            <button class="btn btn-outline-primary ms-3 py-1"
+                                                data-src="/src/Map/NewLeafCity-TownCenter.png"
+                                                data-mapName="新葉城：市區中心"
+                                                onclick="showMap(this)">
+                                                <i class="fa-solid fa-location-dot"></i> 位置
+                                            </button>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="text-center">等級限制</td>
+                                        <td>40等</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="text-center">任務流程</td>
+                                        <td>
+                                            <button class="btn btn-outline-primary py-1"
+                                                    onclick="showPage('lost')">
+                                                <i class="fa-solid fa-magnifying-glass"></i> 查看流程
+                                            </button>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
                         </div>
                         <!-- 蘇白尼的遺物任務流程 -->
                         <div id="Div_subanis_legacy_quest_flow" class="d-none">
@@ -82,10 +114,10 @@
                                         <th style="width: 5%;">
                                             編號
                                         </th>
-                                        <th  style="width: 30%;">
+                                        <th style="width: 30%;">
                                             <div class="ml-2">任務狀態</div>
                                         </th>
-                                        <th  style="width: 30%;">
+                                        <th style="width: 30%;">
                                             <div class="ml-2">相關NPC</div>
                                         </th>
                                         <th>
@@ -226,6 +258,77 @@
                                                             <button class="btn btn-outline-primary ms-2 py-1"
                                                                     data-src="/src/Map/Masteria-MountainSlopes.png"
                                                                     data-mapName="新葉城：高山坡地"
+                                                                    onclick="showMap(this)">
+                                                                <i class="fa-solid fa-location-dot"></i> 位置
+                                                            </button>
+                                                        </div>
+                                                    </div>
+                                                </li>
+                                            </ol>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <!-- 迷失了任務流程 -->
+                        <div id="Div_lost_quest_flow" class="d-none">
+                            <div class="d-flex mb-3">
+                                <button class="btn btn-outline-secondary"
+                                        onclick="showPage('info')">
+                                    <i class="fa-solid fa-arrow-left"></i> 返回
+                                </button>
+                                <h3 class="ms-3 my-0">任務流程</h3>
+                            </div>
+                            <table class="table table-bordered mt-3">
+                                <thead>
+                                    <tr>
+                                        <th style="width: 5%;">
+                                            編號
+                                        </th>
+                                        <th style="width: 30%;">
+                                            <div class="ml-2">任務狀態</div>
+                                        </th>
+                                        <th style="width: 30%;">
+                                            <div class="ml-2">相關NPC</div>
+                                        </th>
+                                        <th>
+                                            <div class="ml-2">流程</div>
+                                        </th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <!-- 編號 -->
+                                        <td>
+                                            <h5 class="text-end p-1">1</h5>
+                                        </td>
+                                        <!-- 任務狀態 -->
+                                        <td class="text-center">
+                                            <img src="/src/Quest/CwkpqPrequest/Lost.png" alt="Image Not Found">
+                                        </td>
+                                        <!-- 相關NPC -->
+                                        <td>
+                                            <div class="m-2">
+                                                <img src="/src/NPC/ElpamGorlab.png" width="200" alt="Image Not Found">
+                                                <button class="btn btn-outline-primary ms-2 py-1"
+                                                        data-src="/src/Map/NewLeafCity-TownCenter.png"
+                                                        data-mapName="新葉城：市區中心"
+                                                        onclick="showMap(this)">
+                                                    <i class="fa-solid fa-location-dot"></i> 位置
+                                                </button>
+                                            </div>
+                                        </td>
+                                        <!-- 流程 -->
+                                        <td>
+                                            <ol>
+                                                <li>
+                                                    打倒葛雷族人蒐集50個 <img class="my-1" src="/src/Item/ElpamMagnet.png" height="32"> 艾爾潘磁石。
+                                                    <div>
+                                                        <div class="d-inline-block m-2">
+                                                            <img src="/src/Mobs/BarnardGray.png" width="150" alt="">
+                                                            <button class="btn btn-outline-primary ms-2 py-1"
+                                                                    data-src="/src/Map/KulanFieldI.png"
+                                                                    data-mapName="地球防衛總部：克嵐草原I"
                                                                     onclick="showMap(this)">
                                                                 <i class="fa-solid fa-location-dot"></i> 位置
                                                             </button>
