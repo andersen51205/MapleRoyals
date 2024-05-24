@@ -268,6 +268,52 @@
                                     </tr>
                                 </tbody>
                             </table>
+                            <table class="table table-bordered table-padding-80">
+                                <tbody>
+                                    <tr>
+                                        <th class="fs-4" colspan="4">其他：英勇印記</th>
+                                    </tr>
+                                    <tr>
+                                        <td class="text-center" style="width: 10%;">任務NPC</td>
+                                        <td>
+                                            <img src="/src/NPC/JohnBarricade.png" alt="Image Not Found">
+                                            <button class="btn btn-outline-primary ms-3 py-1"
+                                                data-src="/src/Map/BiggerBen-Lobby.png"
+                                                data-mapName="大笨鐘：大廳"
+                                                onclick="showMap(this)">
+                                                <i class="fa-solid fa-location-dot"></i> 位置
+                                            </button>
+                                            <button class="btn btn-outline-primary ms-2 py-1"
+                                                    data-src="/src/Minimap/BiggerBenLobby.png"
+                                                    data-mapName="「新葉城：大笨鐘」的入口處"
+                                                    onclick="showMiniMap(this)">
+                                                <i class="fa-solid fa-map"></i> 入口
+                                            </button>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="text-center">等級限制</td>
+                                        <td>70等</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="text-center">任務限制</td>
+                                        <td>完成任務「<strong>力挽狂瀾</strong>」</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="text-center">任務獎勵</td>
+                                        <td><img class="my-1" src="/src/Item/MarkerOfHeroism.png" height="32"> 英雄標誌</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="text-center">任務流程</td>
+                                        <td>
+                                            <button class="btn btn-outline-primary py-1"
+                                                    onclick="showPage('the-mark-of-heroism')">
+                                                <i class="fa-solid fa-magnifying-glass"></i> 查看流程
+                                            </button>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
                         </div>
                         <!-- 蘇白尼的遺物任務流程 -->
                         <div class="page-content subanis-legacy d-none">
@@ -1031,6 +1077,87 @@
                                                 <li>
                                                     拿 <img class="my-1" src="/src/Item/CrimsonwoodKeystone.png" height="32"> 守護者的鑰匙石<br>
                                                     與 <strong>紅杉木堡壘：疼痛洞穴</strong> 的 <strong>Jack</strong> 對話，完成任務後，就能參加CWKPQ了。
+                                                </li>
+                                            </ol>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <!-- 英勇印記 -->
+                        <div class="page-content the-mark-of-heroism d-none">
+                            <div class="d-flex mb-3">
+                                <button class="btn btn-outline-secondary"
+                                        onclick="showPage('info')">
+                                    <i class="fa-solid fa-arrow-left"></i> 返回
+                                </button>
+                                <h3 class="ms-3 my-0">任務流程</h3>
+                            </div>
+                            <table class="table table-bordered mt-3">
+                                <thead>
+                                    <tr>
+                                        <th style="width: 5%;">
+                                            編號
+                                        </th>
+                                        <th style="width: 30%;">
+                                            <div class="ml-2">任務狀態</div>
+                                        </th>
+                                        <th style="width: 30%;">
+                                            <div class="ml-2">相關NPC</div>
+                                        </th>
+                                        <th>
+                                            <div class="ml-2">流程</div>
+                                        </th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <!-- 編號 -->
+                                        <td>
+                                            <h5 class="text-end p-1">1</h5>
+                                        </td>
+                                        <!-- 任務狀態 -->
+                                        <td class="text-center">
+                                            <img src="/src/Quest/CwkpqPrequest/TheMarkOfHeroism.png" alt="Image Not Found">
+                                        </td>
+                                        <!-- 相關NPC -->
+                                        <td>
+                                            <div class="m-2">
+                                                <img src="/src/NPC/JohnBarricade.png" width="200" alt="Image Not Found">
+                                                <button class="btn btn-outline-primary ms-2 py-1"
+                                                        data-src="/src/Map/BiggerBen-Lobby.png"
+                                                        data-mapName="大笨鐘：大廳"
+                                                        onclick="showMap(this)">
+                                                    <i class="fa-solid fa-location-dot"></i> 位置
+                                                </button>
+                                            </div>
+                                        </td>
+                                        <!-- 流程 -->
+                                        <td>
+                                            <ol>
+                                                <li>
+                                                    與 <strong>大笨鐘：大廳</strong> 的 <strong>JohnBarricade</strong> 對話
+                                                </li>
+                                                <li>
+                                                    準備 10個 <img class="my-1" src="/src/Item/GoldOre.png" height="32"> 黃金母礦，
+                                                    1個 <img class="my-1" src="/src/Item/PowerCrystalOre.png" height="32"> 力量母礦，
+                                                    打倒 提豐 蒐集4個 <img class="my-1" src="/src/Item/TyphonFeather.png" height="32"> 提豐羽毛。
+                                                    <div class="d-inline-block m-2">
+                                                        <img src="/src/Mobs/Typhon.png" width="150" alt="">
+                                                        <button class="btn btn-outline-primary ms-2 py-1"
+                                                                data-src="/src/Map/ThePathOfPeril.png"
+                                                                data-mapName="紅杉木堡壘：危險之路"
+                                                                onclick="showMap(this)">
+                                                            <i class="fa-solid fa-location-dot"></i> 位置
+                                                        </button>
+                                                    </div>
+                                                </li>
+                                                <li>
+                                                    將材料拿給 <strong>大笨鐘：大廳</strong> 的 <strong>JohnBarricade</strong>
+                                                </li>
+                                                <li>
+                                                    取得 <img class="my-1" src="/src/Item/MarkerOfHeroism.png" height="32"> <strong>英雄標誌</strong> 後，<br>
+                                                    就能在英雄峽谷使用密道快速通關。
                                                 </li>
                                             </ol>
                                         </td>
