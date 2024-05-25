@@ -185,7 +185,7 @@ const questFlowLists = {
             ],
             steps: [
                 {
-                    text: '打倒電擊象蒐集50個 <img class="my-1" src="/src/Item/HyperGlyph.png" height="32"> 翻譯水晶。',
+                    text: '打倒電擊象蒐集50個 <img class="my-1" src="./src/Item/HyperGlyph.png" height="32"> 翻譯水晶。',
                     mobs: [
                         MOB_DETAIL['Electrophant'],
                     ]
@@ -198,7 +198,7 @@ const questFlowLists = {
             ],
             steps: [
                 {
-                    text: '打倒電子機器人蒐集50個 <img class="my-1" src="/src/Item/MesoGearMapPiece.png" height="32"> 地圖碎片。',
+                    text: '打倒電子機器人蒐集50個 <img class="my-1" src="./src/Item/MesoGearMapPiece.png" height="32"> 地圖碎片。',
                     mobs: [
                         MOB_DETAIL['IAmRobot'],
                     ]
@@ -214,7 +214,7 @@ const questFlowLists = {
             ],
             steps: [
                 {
-                    text: '打倒葛雷族人蒐集50個 <img class="my-1" src="/src/Item/ElpamMagnet.png" height="32"> 艾爾潘磁石。',
+                    text: '打倒葛雷族人蒐集50個 <img class="my-1" src="./src/Item/ElpamMagnet.png" height="32"> 艾爾潘磁石。',
                     mobs: [
                         MOB_DETAIL['BarnardGray'],
                     ]
@@ -234,7 +234,7 @@ const questFlowLists = {
                 }, {
                     text: '選 <strong>(1)Sure, as long as you give it back.</strong><br>接受任務',
                 }, {
-                    text: '打倒鼬鼠鬧鐘蒐集60個 <img class="my-1" src="/src/Item/TemporalFragment.png" height="32"> 時光手錶。',
+                    text: '打倒鼬鼠鬧鐘蒐集60個 <img class="my-1" src="./src/Item/TemporalFragment.png" height="32"> 時光手錶。',
                     mobs: [
                         MOB_DETAIL['TickTock'],
                     ]
@@ -257,7 +257,7 @@ const questFlowLists = {
                 }, {
                     text: "與 <strong>紅杉木堡壘：疼痛洞穴</strong> 的 <strong>Jack</strong> 對話",
                 }, {
-                    text: '取得 <img class="my-1" src="/src/Item/MapOfPhantomForest.png" height="32"> <strong>幻影森林地圖</strong>後，<br>就能使用幻影森林的密道了。',
+                    text: '取得 <img class="my-1" src="./src/Item/MapOfPhantomForest.png" height="32"> <strong>幻影森林地圖</strong>後，<br>就能使用幻影森林的密道了。',
                 }
             ]
         }
@@ -324,7 +324,7 @@ const questFlowLists = {
                 {
                     text: '與 <strong>幻影森林：幻影之路</strong> 的 <strong>Lukan</strong> 對話',
                 }, {
-                    text: '打倒破風衛士蒐集10個 <img class="my-1" src="/src/Item/StormbreakerBadge.png" height="32"> 破風衛士的徽章。',
+                    text: '打倒破風衛士蒐集10個 <img class="my-1" src="./src/Item/StormbreakerBadge.png" height="32"> 破風衛士的徽章。',
                     mobs: [
                         MOB_DETAIL['Stormbreaker'],
                     ]
@@ -347,7 +347,7 @@ const questFlowLists = {
                     ]
                 }, {
                     text: '與 <strong>幻影森林：幻影之路</strong> 的 <strong>Lukan</strong> 對話，<br>'+
-                        '取得 <img class="my-1" src="/src/Item/CrimsonwoodKeystone.png" height="32"> 守護者的鑰匙石。',
+                        '取得 <img class="my-1" src="./src/Item/CrimsonwoodKeystone.png" height="32"> 守護者的鑰匙石。',
                 }
             ]
         }, {
@@ -357,7 +357,7 @@ const questFlowLists = {
             ],
             steps: [
                 {
-                    text: '拿 <img class="my-1" src="/src/Item/CrimsonwoodKeystone.png" height="32"> 守護者的鑰匙石<br>'+
+                    text: '拿 <img class="my-1" src="./src/Item/CrimsonwoodKeystone.png" height="32"> 守護者的鑰匙石<br>'+
                         '與 <strong>紅杉木堡壘：疼痛洞穴</strong> 的 <strong>Jack</strong> 對話，完成任務後，就能參加CWKPQ了。',
                 }
             ]
@@ -373,16 +373,16 @@ const questFlowLists = {
                 {
                     text: '與 <strong>大笨鐘：大廳</strong> 的 <strong>JohnBarricade</strong> 對話',
                 }, {
-                    text: '準備 10個 <img class="my-1" src="/src/Item/GoldOre.png" height="32"> 黃金母礦，'+
-                        '1個 <img class="my-1" src="/src/Item/PowerCrystalOre.png" height="32"> 力量母礦，'+
-                        '打倒 提豐 蒐集4個 <img class="my-1" src="/src/Item/TyphonFeather.png" height="32"> 提豐羽毛。',
+                    text: '準備 10個 <img class="my-1" src="./src/Item/GoldOre.png" height="32"> 黃金母礦，'+
+                        '1個 <img class="my-1" src="./src/Item/PowerCrystalOre.png" height="32"> 力量母礦，'+
+                        '打倒 提豐 蒐集4個 <img class="my-1" src="./src/Item/TyphonFeather.png" height="32"> 提豐羽毛。',
                     mobs: [
                         MOB_DETAIL['Typhon'],
                     ]
                 }, {
                     text: '將材料拿給 <strong>大笨鐘：大廳</strong> 的 <strong>JohnBarricade</strong>',
                 }, {
-                    text: '取得 <img class="my-1" src="/src/Item/MarkerOfHeroism.png" height="32"> <strong>英雄標誌</strong> 後，<br>'+
+                    text: '取得 <img class="my-1" src="./src/Item/MarkerOfHeroism.png" height="32"> <strong>英雄標誌</strong> 後，<br>'+
                         '就能在英雄峽谷使用密道快速通關。',
                 }
             ]
