@@ -36,17 +36,17 @@
                                     <tr>
                                         <td class="text-center" style="width: 10%;">任務NPC</td>
                                         <td>
-                                            <img v-bind:src="`/src/NPC/${quest.npc.img}`" alt="Image Not Found">
+                                            <img v-bind:src="`./src/NPC/${quest.npc.img}`" alt="Image Not Found">
                                             <button v-if="quest.npc.map"
                                                     class="btn btn-outline-primary ms-3 py-1"
-                                                    v-bind:data-src="`/src/Map/${quest.npc.map.img}`"
+                                                    v-bind:data-src="`./src/Map/${quest.npc.map.img}`"
                                                     v-bind:data-mapName="quest.npc.map.title"
                                                     onclick="showMap(this)">
                                                 <i class="fa-solid fa-location-dot"></i> 位置
                                             </button>
                                             <button v-if="quest.npc.miniMap"
                                                     class="btn btn-outline-primary ms-2 py-1"
-                                                    v-bind:data-src="`/src/Minimap/${quest.npc.miniMap.img}`"
+                                                    v-bind:data-src="`./src/Minimap/${quest.npc.miniMap.img}`"
                                                     v-bind:data-mapName="quest.npc.miniMap.title"
                                                     onclick="showMiniMap(this)">
                                                 <i class="fa-solid fa-map"></i> 入口
@@ -63,7 +63,7 @@
                                     </tr>
                                     <tr v-if="quest.reward">
                                         <td class="text-center">任務獎勵</td>
-                                        <td><img class="my-1" v-bind:src="`/src/Item/${quest.reward.icon}`" height="32"> {{ quest.reward.name }}</td>
+                                        <td><img class="my-1" v-bind:src="`./src/Item/${quest.reward.icon}`" height="32"> {{ quest.reward.name }}</td>
                                     </tr>
                                     <tr>
                                         <td class="text-center">任務流程</td>
@@ -109,22 +109,22 @@
                                             <h5 class="text-end p-1">{{ index + 1 }}</h5>
                                         </td>
                                         <td class="text-center">
-                                            <img v-bind:src="`/src/Quest/CwkpqPrequest/${flow.info}`" alt="Image Not Found">
+                                            <img v-bind:src="`./src/Quest/CwkpqPrequest/${flow.info}`" alt="Image Not Found">
                                         </td>
                                         <td>
                                             <div v-for="npc in flow.npcs" class="m-2">
-                                                <img v-bind:src="`/src/NPC/${npc.img}`" width="200" alt="Image Not Found">
+                                                <img v-bind:src="`./src/NPC/${npc.img}`" width="200" alt="Image Not Found">
                                                 <div class="d-inline-block align-middle">
                                                     <button v-if="npc.map"
                                                         class="btn btn-outline-primary d-block ms-2 my-2 py-1"
-                                                        v-bind:data-src="`/src/Map/${npc.map.img}`"
+                                                        v-bind:data-src="`./src/Map/${npc.map.img}`"
                                                         v-bind:data-mapName="npc.map.title"
                                                         onclick="showMap(this)">
                                                     <i class="fa-solid fa-location-dot"></i> 位置
                                                     </button>
                                                     <button v-if="npc.miniMap"
                                                             class="btn btn-outline-primary d-block ms-2 my-2 py-1"
-                                                            v-bind:data-src="`/src/Minimap/${npc.miniMap.img}`"
+                                                            v-bind:data-src="`./src/Minimap/${npc.miniMap.img}`"
                                                             v-bind:data-mapName="npc.miniMap.title"
                                                             onclick="showMiniMap(this)">
                                                         <i class="fa-solid fa-map"></i> 入口
@@ -143,10 +143,10 @@
                                                     <span v-html="step.text"></span>
                                                     <div v-if="step.mobs">
                                                         <div v-for="mob in step.mobs" class="d-inline-block m-2">
-                                                            <img v-bind:src="`/src/Mobs/${mob.img}`" width="150" alt="">
+                                                            <img v-bind:src="`./src/Mobs/${mob.img}`" width="150" alt="">
                                                             <button v-if="mob.map"
                                                                     class="btn btn-outline-primary ms-2 py-1"
-                                                                    v-bind:data-src="`/src/Map/${mob.map.img}`"
+                                                                    v-bind:data-src="`./src/Map/${mob.map.img}`"
                                                                     v-bind:data-mapName="mob.map.title"
                                                                     onclick="showMap(this)">
                                                                 <i class="fa-solid fa-location-dot"></i> 位置
