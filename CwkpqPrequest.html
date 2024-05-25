@@ -28,218 +28,26 @@
                         <!-- CWKPQ前置任務資訊 -->
                         <div class="page-content info">
                             <h3 class="mt-0 mb-3">CWKPQ前置任務</h3>
-                            <table class="table table-bordered table-padding-80">
+                            <table class="table table-bordered table-padding-80" v-for="quest in prequestList">
                                 <tbody>
                                     <tr>
-                                        <th class="fs-4" colspan="4">1. 蘇白尼的遺物</th>
+                                        <th v-text="quest.name" class="fs-4" colspan="4"></th>
                                     </tr>
                                     <tr>
                                         <td class="text-center" style="width: 10%;">任務NPC</td>
                                         <td>
-                                            <img src="/src/NPC/JohnBarricade.png" alt="Image Not Found">
-                                            <button class="btn btn-outline-primary ms-3 py-1"
-                                                data-src="/src/Map/BiggerBen-Lobby.png"
-                                                data-mapName="大笨鐘：大廳"
-                                                onclick="showMap(this)">
-                                                <i class="fa-solid fa-location-dot"></i> 位置
-                                            </button>
-                                            <button class="btn btn-outline-primary ms-2 py-1"
-                                                    data-src="/src/Minimap/BiggerBenLobby.png"
-                                                    data-mapName="「新葉城：大笨鐘」的入口處"
-                                                    onclick="showMiniMap(this)">
-                                                <i class="fa-solid fa-map"></i> 入口
-                                            </button>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td class="text-center">等級限制</td>
-                                        <td>36等</td>
-                                    </tr>
-                                    <tr>
-                                        <td class="text-center">任務流程</td>
-                                        <td>
-                                            <button class="btn btn-outline-primary py-1"
-                                                    onclick="showPage('subanis-legacy')">
-                                                <i class="fa-solid fa-magnifying-glass"></i> 查看流程
-                                            </button>
-                                        </td>
-                                    </tr>
-                                </tbody>
-                            </table>
-                            <table class="table table-bordered table-padding-80">
-                                <tbody>
-                                    <tr>
-                                        <th class="fs-4" colspan="4">2. 迷失了</th>
-                                    </tr>
-                                    <tr>
-                                        <td class="text-center" style="width: 10%;">任務NPC</td>
-                                        <td>
-                                            <img src="/src/NPC/ElpamGorlab.png" alt="Image Not Found">
-                                            <button class="btn btn-outline-primary ms-3 py-1"
-                                                data-src="/src/Map/NewLeafCity-TownCenter.png"
-                                                data-mapName="新葉城：市區中心"
-                                                onclick="showMap(this)">
-                                                <i class="fa-solid fa-location-dot"></i> 位置
-                                            </button>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td class="text-center">等級限制</td>
-                                        <td>40等</td>
-                                    </tr>
-                                    <tr>
-                                        <td class="text-center">任務流程</td>
-                                        <td>
-                                            <button class="btn btn-outline-primary py-1"
-                                                    onclick="showPage('lost')">
-                                                <i class="fa-solid fa-magnifying-glass"></i> 查看流程
-                                            </button>
-                                        </td>
-                                    </tr>
-                                </tbody>
-                            </table>
-                            <table class="table table-bordered table-padding-80">
-                                <tbody>
-                                    <tr>
-                                        <th class="fs-4" colspan="4">3. 重返異世界</th>
-                                    </tr>
-                                    <tr>
-                                        <td class="text-center" style="width: 10%;">任務NPC</td>
-                                        <td>
-                                            <img src="/src/NPC/ElpamGorlab.png" alt="Image Not Found">
-                                            <button class="btn btn-outline-primary ms-3 py-1"
-                                                data-src="/src/Map/NewLeafCity-TownCenter.png"
-                                                data-mapName="新葉城：市區中心"
-                                                onclick="showMap(this)">
-                                                <i class="fa-solid fa-location-dot"></i> 位置
-                                            </button>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td class="text-center">等級限制</td>
-                                        <td>40等</td>
-                                    </tr>
-                                    <tr>
-                                        <td class="text-center">任務限制</td>
-                                        <td>完成任務「<strong>迷失了</strong>」</td>
-                                    </tr>
-                                    <tr>
-                                        <td class="text-center">任務流程</td>
-                                        <td>
-                                            <button class="btn btn-outline-primary py-1"
-                                                    onclick="showPage('reversal')">
-                                                <i class="fa-solid fa-magnifying-glass"></i> 查看流程
-                                            </button>
-                                        </td>
-                                    </tr>
-                                </tbody>
-                            </table>
-                            <table class="table table-bordered table-padding-80">
-                                <tbody>
-                                    <tr>
-                                        <th class="fs-4" colspan="4">4. 尋找傑克</th>
-                                    </tr>
-                                    <tr>
-                                        <td class="text-center" style="width: 10%;">任務NPC</td>
-                                        <td>
-                                            <img src="/src/NPC/JohnBarricade.png" alt="Image Not Found">
-                                            <button class="btn btn-outline-primary ms-3 py-1"
-                                                data-src="/src/Map/BiggerBen-Lobby.png"
-                                                data-mapName="大笨鐘：大廳"
-                                                onclick="showMap(this)">
-                                                <i class="fa-solid fa-location-dot"></i> 位置
-                                            </button>
-                                            <button class="btn btn-outline-primary ms-2 py-1"
-                                                    data-src="/src/Minimap/BiggerBenLobby.png"
-                                                    data-mapName="「新葉城：大笨鐘」的入口處"
-                                                    onclick="showMiniMap(this)">
-                                                <i class="fa-solid fa-map"></i> 入口
-                                            </button>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td class="text-center">等級限制</td>
-                                        <td>50等</td>
-                                    </tr>
-                                    <tr>
-                                        <td class="text-center">任務限制</td>
-                                        <td>完成任務「<strong>蘇白尼的遺物</strong>」、「<strong>重返異世界</strong>」</td>
-                                    </tr>
-                                    <tr>
-                                        <td class="text-center">任務獎勵</td>
-                                        <td><img class="my-1" src="/src/Item/MapOfPhantomForest.png" height="32"> 幻影森林地圖</td>
-                                    </tr>
-                                    <tr>
-                                        <td class="text-center">任務流程</td>
-                                        <td>
-                                            <button class="btn btn-outline-primary py-1"
-                                                    onclick="showPage('finding-jack')">
-                                                <i class="fa-solid fa-magnifying-glass"></i> 查看流程
-                                            </button>
-                                        </td>
-                                    </tr>
-                                </tbody>
-                            </table>
-                            <table class="table table-bordered table-padding-80">
-                                <tbody>
-                                    <tr>
-                                        <th class="fs-4" colspan="4">5. 迷失在翻譯裡</th>
-                                    </tr>
-                                    <tr>
-                                        <td class="text-center" style="width: 10%;">任務NPC</td>
-                                        <td>
-                                            <img src="/src/NPC/Jack.png" alt="Image Not Found">
-                                            <button class="btn btn-outline-primary ms-3 py-1"
-                                                data-src="/src/Map/LowerAscent.png"
-                                                data-mapName="紅杉木堡壘：較低的攀升"
-                                                onclick="showMap(this)">
-                                                <i class="fa-solid fa-location-dot"></i> 位置
-                                            </button>
-                                            <button class="btn btn-outline-primary ms-2 py-1"
-                                                    data-src="/src/Minimap/CavernOfPain.png"
-                                                    data-mapName="「紅杉木堡壘：疼痛洞穴」的入口處"
-                                                    onclick="showMiniMap(this)">
-                                                <i class="fa-solid fa-map"></i> 入口
-                                            </button>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td class="text-center">等級限制</td>
-                                        <td>70等</td>
-                                    </tr>
-                                    <tr>
-                                        <td class="text-center">任務限制</td>
-                                        <td>完成任務「<strong>尋找傑克</strong>」</td>
-                                    </tr>
-                                    <tr>
-                                        <td class="text-center">任務流程</td>
-                                        <td>
-                                            <button class="btn btn-outline-primary py-1"
-                                                    onclick="showPage('lost-in-translation')">
-                                                <i class="fa-solid fa-magnifying-glass"></i> 查看流程
-                                            </button>
-                                        </td>
-                                    </tr>
-                                </tbody>
-                            </table>
-                            <table class="table table-bordered table-padding-80">
-                                <tbody>
-                                    <tr>
-                                        <th class="fs-4" colspan="4">6. 力挽狂瀾</th>
-                                    </tr>
-                                    <tr>
-                                        <td class="text-center" style="width: 10%;">任務NPC</td>
-                                        <td>
-                                            <img src="/src/NPC/Jack.png" alt="Image Not Found">
-                                            <button class="btn btn-outline-primary ms-3 py-1"
-                                                    data-src="/src/Map/LowerAscent.png"
-                                                    data-mapName="紅杉木堡壘：較低的攀升"
+                                            <img v-bind:src="`/src/NPC/${quest.npc.img}`" alt="Image Not Found">
+                                            <button v-if="quest.npc.map"
+                                                    class="btn btn-outline-primary ms-3 py-1"
+                                                    v-bind:data-src="`/src/Map/${quest.npc.map.img}`"
+                                                    v-bind:data-mapName="quest.npc.map.title"
                                                     onclick="showMap(this)">
                                                 <i class="fa-solid fa-location-dot"></i> 位置
                                             </button>
-                                            <button class="btn btn-outline-primary ms-2 py-1"
-                                                    data-src="/src/Minimap/CavernOfPain.png"
-                                                    data-mapName="「紅杉木堡壘：疼痛洞穴」的入口處"
+                                            <button v-if="quest.npc.miniMap"
+                                                    class="btn btn-outline-primary ms-2 py-1"
+                                                    v-bind:data-src="`/src/Minimap/${quest.npc.miniMap.img}`"
+                                                    v-bind:data-mapName="quest.npc.miniMap.title"
                                                     onclick="showMiniMap(this)">
                                                 <i class="fa-solid fa-map"></i> 入口
                                             </button>
@@ -247,67 +55,21 @@
                                     </tr>
                                     <tr>
                                         <td class="text-center">等級限制</td>
-                                        <td>70等</td>
+                                        <td v-text="quest.levelRestrictions"></td>
                                     </tr>
                                     <tr>
                                         <td class="text-center">任務限制</td>
-                                        <td>完成任務「<strong>迷失在翻譯裡</strong>」</td>
+                                        <td v-html="quest.prerequisite"></td>
                                     </tr>
-                                    <tr>
+                                    <tr v-if="quest.reward">
                                         <td class="text-center">任務獎勵</td>
-                                        <td><img class="my-1" src="/src/Item/CrimsonwoodKeystone.png" height="32"> 守護者的鑰匙石</td>
+                                        <td><img class="my-1" v-bind:src="`/src/Item/${quest.reward.icon}`" height="32"> {{ quest.reward.name }}</td>
                                     </tr>
                                     <tr>
                                         <td class="text-center">任務流程</td>
                                         <td>
                                             <button class="btn btn-outline-primary py-1"
-                                                    onclick="showPage('stemming-the-tide')">
-                                                <i class="fa-solid fa-magnifying-glass"></i> 查看流程
-                                            </button>
-                                        </td>
-                                    </tr>
-                                </tbody>
-                            </table>
-                            <table class="table table-bordered table-padding-80">
-                                <tbody>
-                                    <tr>
-                                        <th class="fs-4" colspan="4">其他：英勇印記</th>
-                                    </tr>
-                                    <tr>
-                                        <td class="text-center" style="width: 10%;">任務NPC</td>
-                                        <td>
-                                            <img src="/src/NPC/JohnBarricade.png" alt="Image Not Found">
-                                            <button class="btn btn-outline-primary ms-3 py-1"
-                                                data-src="/src/Map/BiggerBen-Lobby.png"
-                                                data-mapName="大笨鐘：大廳"
-                                                onclick="showMap(this)">
-                                                <i class="fa-solid fa-location-dot"></i> 位置
-                                            </button>
-                                            <button class="btn btn-outline-primary ms-2 py-1"
-                                                    data-src="/src/Minimap/BiggerBenLobby.png"
-                                                    data-mapName="「新葉城：大笨鐘」的入口處"
-                                                    onclick="showMiniMap(this)">
-                                                <i class="fa-solid fa-map"></i> 入口
-                                            </button>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td class="text-center">等級限制</td>
-                                        <td>70等</td>
-                                    </tr>
-                                    <tr>
-                                        <td class="text-center">任務限制</td>
-                                        <td>完成任務「<strong>力挽狂瀾</strong>」</td>
-                                    </tr>
-                                    <tr>
-                                        <td class="text-center">任務獎勵</td>
-                                        <td><img class="my-1" src="/src/Item/MarkerOfHeroism.png" height="32"> 英雄標誌</td>
-                                    </tr>
-                                    <tr>
-                                        <td class="text-center">任務流程</td>
-                                        <td>
-                                            <button class="btn btn-outline-primary py-1"
-                                                    onclick="showPage('the-mark-of-heroism')">
+                                                    v-bind:onclick="`showPage('${quest.questFlow}')`">
                                                 <i class="fa-solid fa-magnifying-glass"></i> 查看流程
                                             </button>
                                         </td>
