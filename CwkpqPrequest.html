@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <meta name="description" content="" />
+        <meta name="author" content="" />
+        <title>MapleRoyals</title>
+        <link rel="icon" type="image/x-icon" href="./src/favicon.ico">
+        <!-- CSS -->
+        <link rel="stylesheet" href="css/lib/bootstrap.min.css"><!-- Bootstrap -->
+        <link rel="stylesheet" href="css/lib/fontawesome.min.css"><!-- FontAwesome -->
+        <link rel="stylesheet" href="css/lib/sweetalert2.min.css"><!-- SweetAlert -->
+        <!-- customize CSS -->
+        <link href="css/app.css" rel="stylesheet">
+    </head>
+    <body>
+        <!-- navbar -->
+        <div id="Div_navbar">
+            <nav-component></nav-component>
+        </div>
+        <!-- main -->
+        <main id="Main_content" class="nav-padding">
+            <div class="container pt-3">
+                <div class="row justify-content-center">
+                    <div class="col-10">
+                        <!-- CWKPQ前置任務資訊 -->
+                        <div class="main-page">
+                            <h3 class="mt-0 mb-3">CWKPQ前置任務</h3>
+                            <table v-for="quest in prequestList" class="table table-bordered table-padding-80">
+                                <tbody>
+                                    <tr>
+                                        <th v-text="quest.name" class="fs-4" colspan="4"></th>
+                                    </tr>
+                                    <tr>
+                                        <td class="text-center" style="width: 10%;">任務NPC</td>
+                                        <td>
+                                            <img v-bind:src="`/src/NPC/${quest.npc.img}`" alt="Image Not Found">
+                                            <button v-if="quest.npc.map"
+                                                    class="btn btn-outline-primary ms-3 py-1"
+                                                    v-bind:data-src="`/src/Map/${quest.npc.map.img}`"
+                                                    v-bind:data-mapName="quest.npc.map.title"
+                                                    onclick="showMap(this)">
+                                                <i class="fa-solid fa-location-dot"></i> 位置
+                                            </button>
+                                            <button v-if="quest.npc.miniMap"
+                                                    class="btn btn-outline-primary ms-2 py-1"
+                                                    v-bind:data-src="`/src/Minimap/${quest.npc.miniMap.img}`"
+                                                    v-bind:data-mapName="quest.npc.miniMap.title"
+                                                    onclick="showMiniMap(this)">
+                                                <i class="fa-solid fa-map"></i> 入口
+                                            </button>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="text-center">等級限制</td>
+                                        <td v-text="quest.levelRestrictions"></td>
+                                    </tr>
+                                    <tr>
+                                        <td class="text-center">任務限制</td>
+                                        <td v-html="quest.prerequisite"></td>
+                                    </tr>
+                                    <tr v-if="quest.reward">
+                                        <td class="text-center">任務獎勵</td>
+                                        <td><img class="my-1" v-bind:src="`/src/Item/${quest.reward.icon}`" height="32"> {{ quest.reward.name }}</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="text-center">任務流程</td>
+                                        <td>
+                                            <button class="btn btn-outline-primary py-1"
+                                                    v-bind:onclick="`showPage('${quest.questFlow}')`">
+                                                <i class="fa-solid fa-magnifying-glass"></i> 查看流程
+                                            </button>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <!-- 任務流程 -->
+                        <div class="flow-page d-none">
+                            <div class="d-flex mb-3">
+                                <button class="btn btn-outline-secondary"
+                                        onclick="showPage('info')">
+                                    <i class="fa-solid fa-arrow-left"></i> 返回
+                                </button>
+                                <h3 class="ms-3 my-0">任務流程</h3>
+                            </div>
+                            <table class="table table-bordered mt-3">
+                                <thead>
+                                    <tr>
+                                        <th style="width: 5%;">
+                                            編號
+                                        </th>
+                                        <th style="width: 30%;">
+                                            <div class="ml-2">任務狀態</div>
+                                        </th>
+                                        <th style="width: 30%;">
+                                            <div class="ml-2">相關NPC</div>
+                                        </th>
+                                        <th>
+                                            <div class="ml-2">流程</div>
+                                        </th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr v-for="(flow, index) in questFlowDetails">
+                                        <td>
+                                            <h5 class="text-end p-1">{{ index + 1 }}</h5>
+                                        </td>
+                                        <td class="text-center">
+                                            <img v-bind:src="`/src/Quest/CwkpqPrequest/${flow.info}`" alt="Image Not Found">
+                                        </td>
+                                        <td>
+                                            <div v-for="npc in flow.npcs" class="m-2">
+                                                <img v-bind:src="`/src/NPC/${npc.img}`" width="200" alt="Image Not Found">
+                                                <div class="d-inline-block align-middle">
+                                                    <button v-if="npc.map"
+                                                        class="btn btn-outline-primary d-block ms-2 my-2 py-1"
+                                                        v-bind:data-src="`/src/Map/${npc.map.img}`"
+                                                        v-bind:data-mapName="npc.map.title"
+                                                        onclick="showMap(this)">
+                                                    <i class="fa-solid fa-location-dot"></i> 位置
+                                                    </button>
+                                                    <button v-if="npc.miniMap"
+                                                            class="btn btn-outline-primary d-block ms-2 my-2 py-1"
+                                                            v-bind:data-src="`/src/Minimap/${npc.miniMap.img}`"
+                                                            v-bind:data-mapName="npc.miniMap.title"
+                                                            onclick="showMiniMap(this)">
+                                                        <i class="fa-solid fa-map"></i> 入口
+                                                    </button>
+                                                    <button v-if="npc.route"
+                                                            class="btn btn-outline-primary d-block ms-2 my-2 py-1"
+                                                            disabled>
+                                                        <i class="fa-solid fa-route"></i> 路線
+                                                    </button>
+                                                </div>
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <ol>
+                                                <li v-for="step in flow.steps">
+                                                    <span v-html="step.text"></span>
+                                                    <div v-if="step.mobs">
+                                                        <div v-for="mob in step.mobs" class="d-inline-block m-2">
+                                                            <img v-bind:src="`/src/Mobs/${mob.img}`" width="150" alt="">
+                                                            <button v-if="mob.map"
+                                                                    class="btn btn-outline-primary ms-2 py-1"
+                                                                    v-bind:data-src="`/src/Map/${mob.map.img}`"
+                                                                    v-bind:data-mapName="mob.map.title"
+                                                                    onclick="showMap(this)">
+                                                                <i class="fa-solid fa-location-dot"></i> 位置
+                                                            </button>
+                                                        </div>
+                                                    </div>
+                                                </li>
+                                            </ol>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+        <!-- script -->
+        <script src="js/lib/vue.global.prod.min.js"></script><!-- Vuejs -->
+        <script src="js/lib/bootstrap.bundle.min.js"></script><!-- Bootstrap -->
+        <script src="js/lib/fontawesome.min.js"></script><!-- FontAwesome -->
+        <script src="js/lib/sweetalert2.min.js"></script><!-- SweetAlert -->
+        <!-- vue component -->
+        <script src="js/component/navbar.js"></script>
+        <!-- customize script -->
+        <script src="js/CwkpqPrequest.js"></script>
+        <script src="js/showMap.js"></script>
+    </body>
+</html>
