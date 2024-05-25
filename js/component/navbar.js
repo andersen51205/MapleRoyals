@@ -34,7 +34,7 @@ header.component('nav-component', {
                                 <a class="dropdown-item" href="./TheBookOfAncient.html">
                                     <i class="fa-solid fa-book"></i> 上古魔書
                                 </a>
-                                <a class="dropdown-item" href="/CwkpqPrequest.html">
+                                <a class="dropdown-item" href="./CwkpqPrequest.html">
                                     <i class="fa-brands fa-fort-awesome"></i> CWKPQ前置任務
                                 </a>
                             </div>
