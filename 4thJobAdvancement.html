@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <meta name="description" content="" />
+        <meta name="author" content="" />
+        <title>MapleRoyals</title>
+        <link rel="icon" type="image/x-icon" href="./src/favicon.ico">
+        <!-- FontAwesome -->
+        <script defer src="lib/fontawesome/brands.min.js"></script>
+        <script defer src="lib/fontawesome/regular.min.js"></script>
+        <script defer src="lib/fontawesome/solid.min.js"></script>
+        <script defer src="lib/fontawesome/fontawesome.min.js"></script>
+        <!-- CSS -->
+        <link rel="stylesheet" href="css/lib/bootstrap.min.css"><!-- Bootstrap -->
+        <link rel="stylesheet" href="css/lib/sweetalert2.min.css"><!-- SweetAlert -->
+        <!-- customize CSS -->
+        <link href="css/app.css" rel="stylesheet">
+    </head>
+    <body>
+        <!-- navbar -->
+        <div id="Div_navbar">
+            <nav-component></nav-component>
+        </div>
+        <!-- main -->
+        <main id="Main_content" class="nav-padding">
+            <div class="container pt-3">
+                <div class="row justify-content-center">
+                    <div class="col-10">
+                        <!-- 任務流程 -->
+                        <div class="main-page">
+                            <div class="d-flex mb-3">
+                                <h3 class="ms-3 my-0">各職業對應教官</h3>
+                            </div>
+                            <table class="table table-bordered mt-3">
+                                <thead>
+                                    <tr>
+                                        <th></th>
+                                        <th>
+                                            <div class="ml-2">劍士</div>
+                                        </th>
+                                        <th>
+                                            <div class="ml-2">法師</div>
+                                        </th>
+                                        <th>
+                                            <div class="ml-2">弓手</div>
+                                        </th>
+                                        <th>
+                                            <div class="ml-2">盜賊</div>
+                                        </th>
+                                        <th>
+                                            <div class="ml-2">海盜</div>
+                                        </th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>三轉教官</td>
+                                        <td v-for="npc in jobInstructor[0]" class="text-center">
+                                            <div class="d-inline-block">
+                                                <div class="img-card-a" style="width: 100px;">
+                                                    <div class="card-img">
+                                                        <div class="img-container" style="height: 90px">
+                                                            <img v-bind:src="npc.img" alt="Image Not Found">
+                                                        </div>
+                                                    </div>
+                                                    <div v-text="npc.name" class="card-text"></div>
+                                                </div>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>四轉教官</td>
+                                        <td v-for="npc in jobInstructor[1]" class="text-center">
+                                            <div class="d-inline-block">
+                                                <div class="img-card-a" style="width: 100px;">
+                                                    <div class="card-img">
+                                                        <div class="img-container" style="height: 110px">
+                                                            <img v-bind:src="npc.img" alt="Image Not Found">
+                                                        </div>
+                                                    </div>
+                                                    <div v-text="npc.name" class="card-text"></div>
+                                                </div>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                            <div class="d-flex mb-3">
+                                <h3 class="ms-3 my-0">四轉流程</h3>
+                            </div>
+                            <table class="table table-bordered mt-3">
+                                <thead>
+                                    <tr>
+                                        <th style="width: 5%;">
+                                            編號
+                                        </th>
+                                        <th style="width: 30%;">
+                                            <div class="ml-2">任務狀態</div>
+                                        </th>
+                                        <th style="width: 30%;">
+                                            <div class="ml-2">相關NPC</div>
+                                        </th>
+                                        <th>
+                                            <div class="ml-2">流程</div>
+                                        </th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr v-for="(flow, index) in questFlowDetails">
+                                        <td>
+                                            <h5 class="text-end p-1">{{ index + 1 }}</h5>
+                                        </td>
+                                        <td class="text-center">
+                                            <img v-bind:src="flow.info" alt="Image Not Found" style="max-width: 300px;">
+                                        </td>
+                                        <td>
+                                            <div v-for="npc in flow.npcs" class="img-card-b m-3">
+                                                <div class="card-img">
+                                                    <div class="img-container" style="max-width: 75px; max-height: 110px;">
+                                                        <img v-bind:src="npc.img" alt="Image Not Found">
+                                                    </div>
+                                                </div>
+                                                <div class="card-content">
+                                                    <div class="content-header">
+                                                        <span v-text="npc.name"></span>
+                                                    </div>
+                                                    <div class="content-body" style="min-height: 100px;">
+                                                        <div class="d-flex flex-column align-items-center gap-2">
+                                                            <button v-if="npc.map && npc.map.isDisabled"
+                                                                class="btn btn-outline-primary"
+                                                                style="width: 100px;"
+                                                                disabled
+                                                            >
+                                                                <i class="fa-solid fa-location-dot"></i> 位置
+                                                            </button>
+                                                            <button v-else-if="npc.map"
+                                                                v-bind:data-src="npc.map.img"
+                                                                v-bind:data-mapName="npc.map.title"
+                                                                class="btn btn-outline-primary"
+                                                                onclick="showMap(this)"
+                                                                style="width: 100px;"
+                                                            >
+                                                                <i class="fa-solid fa-location-dot"></i> 位置
+                                                            </button>
+                                                            <button v-if="npc.miniMap && npc.miniMap.isDisabled"
+                                                                class="btn btn-outline-primary"
+                                                                style="width: 100px;"
+                                                                disabled
+                                                            >
+                                                                <i class="fa-solid fa-map"></i> 入口
+                                                            </button>
+                                                            <button v-else-if="npc.miniMap"
+                                                                v-bind:data-src="npc.miniMap.img"
+                                                                v-bind:data-mapName="npc.miniMap.title"
+                                                                class="btn btn-outline-primary"
+                                                                onclick="showMiniMap(this)"
+                                                                style="width: 100px;"
+                                                            >
+                                                                <i class="fa-solid fa-map"></i> 入口
+                                                            </button>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <ol>
+                                                <li v-for="step in flow.steps">
+                                                    <span v-html="step.text"></span>
+                                                </li>
+                                            </ol>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+        <!-- script -->
+        <script src="js/lib/vue.global.prod.min.js"></script><!-- Vuejs -->
+        <script src="js/lib/bootstrap.bundle.min.js"></script><!-- Bootstrap -->
+        <script src="js/lib/sweetalert2.min.js"></script><!-- SweetAlert -->
+        <!-- vue component -->
+        <script src="js/component/navbar.js"></script>
+        <!-- Utility -->
+        <script src="js/MapData.js"></script>
+        <script src="js/NpcData.js"></script>
+        <script src="js/Utility.js"></script>
+        <!-- customize script -->
+        <script src="js/4thJobAdvancement.js"></script>
+    </body>
+</html>
