@@ -43,6 +43,18 @@ header.component('nav-component', {
                             <a class="nav-link dropdown-toggle active"
                                     href="#" role="button"
                                     data-bs-toggle="dropdown">
+                                <i class="fa-solid fa-people-arrows"></i> 轉職資訊
+                            </a>
+                            <div class="dropdown-menu">
+                                <a class="dropdown-item" href="./4thJobAdvancement.html">
+                                    <i class="fa-solid fa-person-circle-question"></i> 四轉流程
+                                </a>
+                            </div>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle active"
+                                    href="#" role="button"
+                                    data-bs-toggle="dropdown">
                                 <i class="fa-solid fa-screwdriver-wrench"></i> 小工具
                             </a>
                             <div class="dropdown-menu">

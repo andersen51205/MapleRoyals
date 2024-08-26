@@ -108,3 +108,60 @@ td, th {
 .counter.gray .counter-icon{ background-color: #444; }
 .counter.gray .counter-icon:before{ background-color: #666; }
 .counter.gray .counter-value{ color: #666; }
+
+/* 圖片容器 */
+.img-container {
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+}
+.img-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+/* 圖卡元件A：上圖+下文字 */
+.img-card-a {
+    display: flex;
+    flex-direction: column;
+    border: 1px solid #808080;
+    border-radius: 0.5rem;
+    overflow: hidden;
+}
+.img-card-a .card-img {
+    background-color: #ddddcc;
+    padding: 0.5rem;
+}
+.img-card-a .card-text {
+    background-color: #ffefc1;
+    padding: 0.5rem;
+    border-top: 1px solid #808080;
+}
+
+/* 圖卡元件B：左圖+右上標題+右下內容 */
+.img-card-b {
+    display: flex;
+    text-align: center;
+    border: 1px solid #808080;
+    border-radius: 0.5rem;
+    overflow: hidden;
+}
+.img-card-b .card-img {
+    flex-basis: 40%;
+    background-color: #ddddcc;
+    padding: 0.5rem;
+    text-align: center;
+}
+.img-card-b .card-content {
+    flex-basis: 60%;
+    border-left: 1px solid #808080;
+}
+.img-card-b .card-content .content-header {
+    padding: 0.25rem;
+    background-color: #ffefc1;
+}
+.img-card-b .card-content .content-body {
+    padding: 0.5rem;
+    border-top: 1px solid #808080;
+}
