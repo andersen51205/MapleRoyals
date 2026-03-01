@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <meta name="description" content="" />
+        <meta name="author" content="" />
+        <title>MapleRoyals</title>
+        <link rel="icon" type="image/x-icon" href="./src/favicon.ico">
+        <!-- FontAwesome -->
+        <script defer src="lib/fontawesome/brands.min.js"></script>
+        <script defer src="lib/fontawesome/regular.min.js"></script>
+        <script defer src="lib/fontawesome/solid.min.js"></script>
+        <script defer src="lib/fontawesome/fontawesome.min.js"></script>
+        <!-- CSS -->
+        <link rel="stylesheet" href="css/lib/bootstrap.min.css"><!-- Bootstrap -->
+        <link rel="stylesheet" href="css/lib/sweetalert2.min.css"><!-- SweetAlert -->
+        <!-- customize CSS -->
+        <link href="css/app.css" rel="stylesheet">
+        <!-- Utility -->
+        <script src="js/Utility.js"></script>
+        <!-- Data -->
+        <script src="js/data/Skill.js"></script>
+    </head>
+    <body>
+        <!-- navbar -->
+        <div id="Div_navbar">
+            <nav-component></nav-component>
+        </div>
+        <!-- main -->
+        <main id="Main_content" class="nav-padding">
+            <div class="container pt-3">
+                <div class="row justify-content-center">
+                    <div class="col-10">
+                        <!-- 任務流程 -->
+                        <div class="main-page">
+                            <div class="d-flex mb-3">
+                                <h3 class="ms-3 my-0">四轉技能</h3>
+                            </div>
+                            <table class="table table-bordered mt-3">
+                                <thead>
+                                    <tr>
+                                        <th class="d-flex align-items-center justify-content-between">
+                                            <div class="px-1">篩選</div>
+                                            <button type="button" id="Btn_clear" class="btn btn-sm btn-secondary" v-on:click="clearFilters">清除</button>
+                                        </th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td class="d-flex">
+                                            <div v-for="(job, index) in jobs" class="flex-fill">
+                                                <div class="p-1">
+                                                    <div class="d-flex btn-group" role="group">
+                                                        <template v-for="(master, j) in job.master">
+                                                            <input type="checkbox" v-bind:id="'Checkbox_'+master.name" class="btn-check" v-bind:value="master.text" v-model="selectedJobs">
+                                                            <label class="btn btn-sm btn-outline-primary" v-bind:for="'Checkbox_'+master.name">{{ master.text }}</label>
+                                                        </template>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="d-flex flex-wrap">
+                                            <div v-for="(name, index) in bosses" class="p-1">
+                                                <input type="checkbox" v-bind:id="'Checkbox_'+index" class="btn-check" v-bind:value="name" v-model="selectedMonsters">
+                                                <label class="btn btn-sm btn-outline-primary" v-bind:for="'Checkbox_'+index">{{ name }}</label>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="d-flex flex-wrap">
+                                            <div v-for="(name, index) in mobs" class="p-1">
+                                                <input type="checkbox" v-bind:id="'Checkbox_'+index" class="btn-check" v-bind:value="name" v-model="selectedMonsters">
+                                                <label class="btn btn-sm btn-outline-primary" v-bind:for="'Checkbox_'+index">{{ name }}</label>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                            <table class="table table-bordered mt-3">
+                                <thead>
+                                    <tr>
+                                        <th style="width: 12%;">
+                                            職業
+                                        </th>
+                                        <th style="width: 16%;">
+                                            技能名稱
+                                        </th>
+                                        <th style="width: 18%;">
+                                            10級
+                                        </th>
+                                        <th style="width: 27%;">
+                                            20級
+                                        </th>
+                                        <th style="width: 27%;">
+                                            30級
+                                        </th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr v-for="(skill, index) in filteredSkills">
+                                        <td>
+                                            <p class="text-center m-0 p-1">{{ skill.job.name }}</p>
+                                        </td>
+                                        <td class="text-center">
+                                            <div class="d-inline-block">
+                                                <img v-bind:src="skill.img" alt="Image Not Found">
+                                            </div>
+                                            <p class="d-inline-block m-0 p-1">{{ skill.name }}</p>
+                                        </td>
+                                        <td v-for="mastery in skill.mastery">
+                                            <div v-if="mastery.isAvailable && mastery.obtain=='job'">
+                                                {{ mastery.from }}
+                                            </div>
+                                            <div v-if="mastery.isAvailable && mastery.obtain=='quest'">
+                                                <button type="button" class="btn btn-sm btn-outline-primary">
+                                                    <i class="fa-solid fa-magnifying-glass"></i> {{ mastery.from }}
+                                                </button>
+                                            </div>
+                                            <div v-else-if="mastery.isAvailable && mastery.obtain=='monster'">
+                                                <button v-for="monster in mastery.from" type="button" class="btn btn-sm m-1" v-bind:class="(isFilteredMonster(monster) ? 'btn-outline-danger' : 'btn-outline-dark')">
+                                                    {{ monster }}
+                                                </button>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+        <!-- script -->
+        <script src="js/lib/vue.global.prod.min.js"></script><!-- Vuejs -->
+        <script src="js/lib/bootstrap.bundle.min.js"></script><!-- Bootstrap -->
+        <script src="js/lib/sweetalert2.min.js"></script><!-- SweetAlert -->
+        <!-- vue component -->
+        <script src="js/component/navbar.js"></script>
+        <!-- customize script -->
+        <script src="js/4thJobSkill.js"></script>
+    </body>
+</html>

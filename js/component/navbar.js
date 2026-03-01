@@ -43,11 +43,14 @@ header.component('nav-component', {
                             <a class="nav-link dropdown-toggle active"
                                     href="#" role="button"
                                     data-bs-toggle="dropdown">
-                                <i class="fa-solid fa-people-arrows"></i> 轉職資訊
+                                <i class="fa-solid fa-people-arrows"></i> 職業資訊
                             </a>
                             <div class="dropdown-menu">
                                 <a class="dropdown-item" href="./4thJobAdvancement.html">
                                     <i class="fa-solid fa-person-circle-question"></i> 四轉流程
+                                </a>
+                                <a class="dropdown-item" href="./4thJobSkill.html">
+                                    <i class="fa-solid fa-book-medical"></i> 四轉技能
                                 </a>
                             </div>
                         </li>
